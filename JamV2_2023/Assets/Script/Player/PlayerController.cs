@@ -107,7 +107,9 @@ public class PlayerController : MonoBehaviour
     {
         var keepSpeedValue = maxSpeed;
         maxSpeed = dashSpeed;
+        Physics.IgnoreLayerCollision(6,7);
         yield return new WaitForSeconds(dashDuration);
+        Physics.IgnoreLayerCollision(6,7, false);
         maxSpeed = keepSpeedValue;
     }
 

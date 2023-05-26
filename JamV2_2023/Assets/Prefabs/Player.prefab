@@ -77,7 +77,7 @@ GameObject:
   - component: {fileID: 6301762467259059124}
   - component: {fileID: 6301762467259059130}
   - component: {fileID: 6301762467259059125}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -249,10 +249,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 5
-  dashSpeed: 10
+  dashSpeed: 15
   timeToDash: 2
   dashDuration: 0.2
   isDashing: 0
+  isDashingReload: 0
   directionOfPlayer: {fileID: 1280027501439561497}
 --- !u!1001 &105823000563124164
 PrefabInstance:
