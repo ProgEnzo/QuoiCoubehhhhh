@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using NaughtyAttributes;
 
 
 [RequireComponent(typeof(CharacterController))]
@@ -13,7 +14,14 @@ public class PlayerController : MonoBehaviour
     private bool groundedPlayer;
     
     [SerializeField]
-    private float playerSpeed = 2.0f;
+    private float maxSpeed = 2.0f;
+    [SerializeField]
+    private float dashSpeed = 2.0f;
+    [SerializeField] private float timeToDash = 2.0f;
+    [SerializeField] private float dashDuration = 2.0f;
+    [SerializeField] private bool isDashing;
+    
+    
     private float jumpHeight = 1.0f;
     private float gravityValue = -9.81f;
 
@@ -41,7 +49,7 @@ public class PlayerController : MonoBehaviour
         }
 
         Vector3 move = new Vector3(movementInput.x, 0, movementInput.y);
-        controller.Move(move * Time.deltaTime * playerSpeed);
+        controller.Move(move * Time.deltaTime * maxSpeed);
 
         if (move != Vector3.zero)
         {
