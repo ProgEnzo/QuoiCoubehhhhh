@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float timeToDash = 2.0f;
     [SerializeField] private float dashDuration = 2.0f;
     [SerializeField] private bool isDashing;
-    
+    [SerializeField] private bool isDashingReload;
     
     private float jumpHeight = 1.0f;
     private float gravityValue = -9.81f;
@@ -32,6 +32,7 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         controller = gameObject.GetComponent<CharacterController>();
+        isDashingReload = true;
     }
 
 
@@ -39,8 +40,26 @@ public class PlayerController : MonoBehaviour
     {
         movementInput = ctx.ReadValue<Vector2>();
     }
+    
+    public void OnDash(InputAction.CallbackContext ctx)
+    {
+        if (ctx.started)
+        {
+            isDashing = true;
+        }
+    }
+
+    private void Update()
+    {
+        
+    }
 
     void FixedUpdate()
+    {
+        Movement();
+    }
+
+    void Movement()
     {
         groundedPlayer = controller.isGrounded;
         if (groundedPlayer && playerVelocity.y < 0)
@@ -57,6 +76,15 @@ public class PlayerController : MonoBehaviour
             transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(move), 0.1f);
         }
 
+        if (isDashing && isDashingReload)
+        {
+            Dash();
+        }
+        else if (isDashing && !isDashingReload)
+        {
+            isDashing = false;
+        }
+
         // Changes the height position of the player..
         if (Input.GetButtonDown("Jump") && groundedPlayer)
         {
@@ -65,6 +93,30 @@ public class PlayerController : MonoBehaviour
 
         playerVelocity.y += gravityValue * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
+    }
+
+    void Dash()
+    {
+        isDashing = false;
+        isDashingReload = false;
+        StartCoroutine(DashDuration());
+        StartCoroutine(DashReload());
+    }
+
+    IEnumerator DashDuration()
+    {
+        var keepSpeedValue = maxSpeed;
+        maxSpeed = dashSpeed;
+        Physics.IgnoreLayerCollision(6,7);
+        yield return new WaitForSeconds(dashDuration);
+        Physics.IgnoreLayerCollision(6,7, false);
+        maxSpeed = keepSpeedValue;
+    }
+
+    IEnumerator DashReload()
+    {
+        yield return new WaitForSeconds(timeToDash);
+        isDashingReload = true;
     }
 
     private void OnDrawGizmos()
