@@ -198,7 +198,7 @@ public class ModuleInteractible : MonoBehaviour
                         isOn = false;
                     }
 
-                    if (other.GetComponent<InteractSphere>().playercontroller.isInteractingg)
+                    if (other.GetComponent<InteractSphere>().playercontroller.isInteractingg) // pose aliment et cuisinent 
                     {
                         other.GetComponent<InteractSphere>().playercontroller.isInteractingg = false;
                         gameObject.transform.parent = null;
