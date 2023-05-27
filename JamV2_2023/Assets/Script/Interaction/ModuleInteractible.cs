@@ -45,10 +45,11 @@ public class ModuleInteractible : MonoBehaviour
         SecureSO();
         if (Cuisine)
         {
-            /*foreach (var i in ElementVerticalMouvemet)
-            {
-                i.SetActive(true);
-            }*/
+            var a = GetComponent<Rigidbody>();
+                
+            a.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ | 
+                            RigidbodyConstraints.FreezeRotation ;
+
         }
         else
         {
@@ -118,13 +119,50 @@ public class ModuleInteractible : MonoBehaviour
         {
             if (Cuisine)
             {
-                
+                if (!isOn)
+                {
+                    if (other.GetComponent<InteractSphere>().playercontroller.isInteractingg) // déplace la cuisine
+                    {
+                        if (!other.GetComponent<InteractSphere>().playercontroller.canMoveModule)
+                        {
+                            other.GetComponent<InteractSphere>().playercontroller.maxSpeed = 2.5f;
+                        }
+                        else
+                        {
+                            other.GetComponent<InteractSphere>().playercontroller.maxSpeed =
+                                other.GetComponent<InteractSphere>().playercontroller.movingModuleSpeed;
+                        }
+                        
+                        gameObject.transform.parent = other.GetComponent<InteractSphere>().playercontroller.transform; // set child
+                        gameObject.transform.position = other.GetComponent<InteractSphere>().playercontroller.waypointInteractDeplacementCuisine.transform.position; // set position
+                        other.GetComponent<InteractSphere>().playercontroller.objectInHand = gameObject; // dans la main 
+                        other.GetComponent<InteractSphere>().playercontroller.objectInHand.GetComponent<Rigidbody>()
+                            .constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ | 
+                                           RigidbodyConstraints.FreezeRotation ;
+                        other.GetComponent<InteractSphere>().playercontroller.isInteractingg = false;
+                        isOn = true;
+                        other.GetComponent<InteractSphere>().playercontroller.canRotatePlayer = false;
+                    }
+                }
+                else
+                {
+                    if (other.GetComponent<InteractSphere>().playercontroller.isInteractingg)// repose la cuisine
+                    {
+                        
+                        other.GetComponent<InteractSphere>().playercontroller.maxSpeed = 5;
+
+                        other.GetComponent<InteractSphere>().playercontroller.isInteractingg = false;
+                        gameObject.transform.parent = null;
+                        other.GetComponent<InteractSphere>().playercontroller.canRotatePlayer = true;
+                        isOn = false;
+                    }
+                }
             }
             else
             {
                 if (!isOn)
                 {
-                    if (other.GetComponent<InteractSphere>().playercontroller.isInteractingg)
+                    if (other.GetComponent<InteractSphere>().playercontroller.isInteractingg) // prend alliment
                     {
                         gameObject.transform.parent = other.GetComponent<InteractSphere>().playercontroller.transform; // set child
                         gameObject.transform.position = other.GetComponent<InteractSphere>().playercontroller.waypointInteract.transform.position; // set position
@@ -137,7 +175,7 @@ public class ModuleInteractible : MonoBehaviour
                 }
                 else
                 {
-                    if (other.GetComponent<InteractSphere>().playercontroller.isThrow)
+                    if (other.GetComponent<InteractSphere>().playercontroller.isThrow) // lance alliment
                     {
                         gameObject.transform.parent = null;
                         other.GetComponent<InteractSphere>().playercontroller.objectInHand.GetComponent<Rigidbody>()
@@ -149,7 +187,7 @@ public class ModuleInteractible : MonoBehaviour
                         thrown = true;
                     }
                     
-                    if (other.GetComponent<InteractSphere>().playercontroller.isEat)
+                    if (other.GetComponent<InteractSphere>().playercontroller.isEat) // mange aliment
                     {
                         gameObject.transform.parent = null;
                         PowerSelf(other.GetComponent<InteractSphere>().playercontroller);
@@ -157,6 +195,15 @@ public class ModuleInteractible : MonoBehaviour
                         box1.enabled = false;
                         box2.enabled = false;
                         GetComponent<MeshRenderer>().enabled = false;
+                        isOn = false;
+                    }
+
+                    if (other.GetComponent<InteractSphere>().playercontroller.isInteractingg) // pose aliment et cuisinent 
+                    {
+                        other.GetComponent<InteractSphere>().playercontroller.isInteractingg = false;
+                        gameObject.transform.parent = null;
+                        other.GetComponent<InteractSphere>().playercontroller.objectInHand.GetComponent<Rigidbody>()
+                            .constraints = RigidbodyConstraints.None;
                         isOn = false;
                     }
                 }
@@ -181,7 +228,7 @@ public class ModuleInteractible : MonoBehaviour
             case "Crokaium":
                 CrokaiumSelf(other);
                 break;
-            case "Pepinrium":
+            case "Prepinrium":
                 PepinriumSelf(other);
                 break;
             case "Tremium":
@@ -215,14 +262,18 @@ public class ModuleInteractible : MonoBehaviour
     
     void PepinriumSelf(PlayerController other)
     {
+        Debug.Log("sd");
         StartCoroutine(pepinriumSelf(other));
     }
     IEnumerator pepinriumSelf(PlayerController other)
     {
-        var keepValueSpeed = movingModuleSpeed;
-        movingModuleSpeed = modifiedMovingModuleSpeedBonus;
+        other.canMoveModule = canMoveModule;
+        var keepValueSpeed = other.movingModuleSpeed;
+        other.movingModuleSpeed = modifiedMovingModuleSpeedBonus;
+        Debug.Log(movingModuleSpeed);
         yield return new WaitForSeconds(effectDuration);
-        movingModuleSpeed = keepValueSpeed;
+        other.canMoveModule = false;
+        other.movingModuleSpeed = keepValueSpeed;
     }
     
     
@@ -233,7 +284,7 @@ public class ModuleInteractible : MonoBehaviour
     }
 
 
-        //-------------------------------------.
+        //-------------------------------------
 
     void PowerTo(PlayerController other)
     {   
@@ -245,7 +296,7 @@ public class ModuleInteractible : MonoBehaviour
             case "Crokaium":    
                 CrokaiumTo(other);
                 break;
-            case "Pepinrium":
+            case "Prepinrium":
                 PepinriumTo(other);
                 break;
             case "Tremium":
@@ -280,10 +331,13 @@ public class ModuleInteractible : MonoBehaviour
 
     IEnumerator pepinriumTo(PlayerController other)
     {
-        var keepValueSpeed = movingModuleSpeed;
-        movingModuleSpeed = modifiedMovingModuleSpeedBonus;
+        other.canMoveModule = canMoveModule;
+        var keepValueSpeed = other.movingModuleSpeed;
+        other.movingModuleSpeed = modifiedMovingModuleSpeedMalus;
+        Debug.Log(movingModuleSpeed);
         yield return new WaitForSeconds(effectDuration);
-        movingModuleSpeed = keepValueSpeed;
+        other.canMoveModule = false;
+        other.movingModuleSpeed = keepValueSpeed;
     }
     
     void TremiumTo(PlayerController other)

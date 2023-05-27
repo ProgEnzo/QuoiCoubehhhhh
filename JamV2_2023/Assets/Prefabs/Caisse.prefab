@@ -329,7 +329,7 @@ MonoBehaviour:
   movingModuleSpeed: 0
   moduleName: 
   mesh: {fileID: 0}
-  moduleMovingSpeed: 5
+  moduleMovingSpeed: 2.5
   timeToCook: 3.5
   Cuisine: 0
   ElementVerticalMouvemet:

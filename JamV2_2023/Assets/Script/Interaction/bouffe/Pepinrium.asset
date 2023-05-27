@@ -22,8 +22,8 @@ MonoBehaviour:
   forceMultiplier: 0
   speedMultiplierBonus: 0
   speedMultiplierMalus: 0
-  canMoveModule: 0
-  movingModuleSpeedBonus: 10
+  canMoveModule: 1
+  movingModuleSpeedBonus: 5
   movingModuleSpeedMalus: 0
   modifiedTimeToCook: 0
   canCookImmediately: 0

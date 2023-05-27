@@ -36,6 +36,7 @@ public class PlayerController : MonoBehaviour
     public bool isInteractingg;
 
     public Transform waypointInteract; // endroit ou interact object doit se situer quand player tient l'ojbet
+    public Transform waypointInteractDeplacementCuisine;
 
     public GameObject objectInHand;
     public Rigidbody objectInHandRB;
@@ -53,6 +54,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private ParticleSystem vfxupdash;
     
     public CapsuleCollider playerInteract;
+
+    [Space]
+    public bool canMoveModule;
+    public float movingModuleSpeed;
     
     private Target LockedTarget
     {
@@ -240,6 +245,8 @@ public class PlayerController : MonoBehaviour
         LoockingForTarget();
     }
 
+    public bool canRotatePlayer = true;
+
     void Movement()
     {
         groundedPlayer = controller.isGrounded;
@@ -251,7 +258,7 @@ public class PlayerController : MonoBehaviour
         Vector3 move = new Vector3(movementInput.x, 0, movementInput.y);
         controller.Move(move * Time.deltaTime * maxSpeed);
 
-        if (move != Vector3.zero)
+        if (move != Vector3.zero && canRotatePlayer)
         {
             //gameObject.transform.forward = move;
             transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(move), 0.1f);
