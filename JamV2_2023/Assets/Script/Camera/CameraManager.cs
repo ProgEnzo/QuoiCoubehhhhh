@@ -6,9 +6,12 @@ using UnityEngine;
 
 public class CameraManager : MonoBehaviour
 {
-
+    
     public CinemachineTargetGroup targetGroup;
 
+    public int count;
+    public List<Transform> placesToSpawns;
+    
 
     public static CameraManager instance;
     private void Awake()
@@ -35,5 +38,6 @@ public class CameraManager : MonoBehaviour
         Transform p = GameObject.Find("Player(Clone)").transform;
         p.name = "Player";
         targetGroup.AddMember(p, 1,1); 
+        count
     }
 }
