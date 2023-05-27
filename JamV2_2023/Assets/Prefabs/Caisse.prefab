@@ -326,10 +326,11 @@ MonoBehaviour:
   moduleInteractibleSO: {fileID: 0}
   box1: {fileID: 4846235148105489384}
   box2: {fileID: 8881992217260444698}
+  movingModuleSpeed: 0
   moduleName: 
   mesh: {fileID: 0}
-  moduleMovingSpeed: 0
-  timeToCook: 0
+  moduleMovingSpeed: 5
+  timeToCook: 3.5
   Cuisine: 0
   ElementVerticalMouvemet:
   - {fileID: 4846235146708303932}
@@ -338,13 +339,16 @@ MonoBehaviour:
   - {fileID: 1833419124066917378}
   effectDuration: 0
   forceMultiplier: 0
-  speedMultiplier: 0
+  speedMultiplierBonus: 0
+  speedMultiplierMalus: 0
   canMoveModule: 0
-  movingModuleSpeed: 0
+  modifiedMovingModuleSpeedBonus: 0
+  modifiedMovingModuleSpeedMalus: 0
   modifiedTimeToCook: 0
   canCookImmediately: 0
   parent: {fileID: 0}
   isOn: 0
+  thrown: 0
 --- !u!54 &8202026781739193995
 Rigidbody:
   m_ObjectHideFlags: 0

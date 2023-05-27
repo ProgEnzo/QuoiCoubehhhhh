@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private ParticleSystem vfxuppuissance;
     [SerializeField] private ParticleSystem vfxupspeed;
     [SerializeField] private ParticleSystem vfxweak;
-    [SerializeField] private ParticleSystem vfxslow;
+    [SerializeField] public ParticleSystem vfxslow;
     [SerializeField] private ParticleSystem vfxupdash;
     
     public CapsuleCollider playerInteract;

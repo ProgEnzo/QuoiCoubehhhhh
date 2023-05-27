@@ -34,7 +34,8 @@ public class ModuleInteractible : MonoBehaviour
     public float speedMultiplierMalus;
     
     public bool canMoveModule;
-    public float modifiedMovingModuleSpeed;
+    public float modifiedMovingModuleSpeedBonus;
+    public float modifiedMovingModuleSpeedMalus;
 
     public float modifiedTimeToCook;
     public bool canCookImmediately; 
@@ -89,7 +90,9 @@ public class ModuleInteractible : MonoBehaviour
         speedMultiplierBonus = moduleInteractibleSO.speedMultiplierBonus;
         speedMultiplierMalus = moduleInteractibleSO.speedMultiplierMalus;
         canMoveModule = moduleInteractibleSO.canMoveModule;
-        modifiedMovingModuleSpeed = moduleInteractibleSO.movingModuleSpeed;
+        modifiedMovingModuleSpeedBonus
+            = moduleInteractibleSO.movingModuleSpeedBonus;
+        modifiedMovingModuleSpeedMalus = moduleInteractibleSO.movingModuleSpeedMalus;
         modifiedTimeToCook = moduleInteractibleSO.modifiedTimeToCook;
         canCookImmediately = moduleInteractibleSO.canCookImmediately;
     }
@@ -217,7 +220,7 @@ public class ModuleInteractible : MonoBehaviour
     IEnumerator pepinriumSelf(PlayerController other)
     {
         var keepValueSpeed = movingModuleSpeed;
-        movingModuleSpeed = modifiedMovingModuleSpeed;
+        movingModuleSpeed = modifiedMovingModuleSpeedBonus;
         yield return new WaitForSeconds(effectDuration);
         movingModuleSpeed = keepValueSpeed;
     }
@@ -225,7 +228,7 @@ public class ModuleInteractible : MonoBehaviour
     
     void TremiumSelf(PlayerController other)
     {
-        canCookImmediately = true;
+        canCookImmediately = false;
         //StartCoroutine(tremiumSelf(other));
     }
 
@@ -259,6 +262,7 @@ public class ModuleInteractible : MonoBehaviour
     void CrokaiumTo(PlayerController other)
     {
         StartCoroutine(crokaiumTo(other));
+        other.vfxslow.Play();
     }
     
     IEnumerator crokaiumTo(PlayerController other)
@@ -271,12 +275,28 @@ public class ModuleInteractible : MonoBehaviour
     
     void PepinriumTo(PlayerController other)
     {
-        
+        StartCoroutine(pepinriumTo(other));
+    }
+
+    IEnumerator pepinriumTo(PlayerController other)
+    {
+        var keepValueSpeed = movingModuleSpeed;
+        movingModuleSpeed = modifiedMovingModuleSpeedBonus;
+        yield return new WaitForSeconds(effectDuration);
+        movingModuleSpeed = keepValueSpeed;
     }
     
     void TremiumTo(PlayerController other)
     {
-        
+        StartCoroutine(tremiumTo(other));
+    }
+    
+    IEnumerator tremiumTo(PlayerController other)
+    {
+        var keepValueSpeed = timeToCook;
+        timeToCook = modifiedTimeToCook;
+        yield return new WaitForSeconds(effectDuration);
+        timeToCook = keepValueSpeed;
     }
     
 

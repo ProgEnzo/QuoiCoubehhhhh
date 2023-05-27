@@ -16,13 +16,14 @@ MonoBehaviour:
   moduleName: Crokaium
   mesh: {fileID: 0}
   moduleMovingSpeed: 0
-  timeToCook: 0
+  timeToCook: 3.5
   verticalMovement: 0
   effectDuration: 3
   forceMultiplier: 0
   speedMultiplierBonus: 2
   speedMultiplierMalus: 0.5
   canMoveModule: 0
-  movingModuleSpeed: 0
+  movingModuleSpeedBonus: 0
+  movingModuleSpeedMalus: 0
   modifiedTimeToCook: 0
   canCookImmediately: 0
