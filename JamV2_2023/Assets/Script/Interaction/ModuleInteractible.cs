@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
@@ -6,16 +7,33 @@ using UnityEngine;
 public class ModuleInteractible : MonoBehaviour
 {
     public ModuleInteractibleSO moduleInteractibleSO;
-    
+
     [Space]
     [SerializeField]private string moduleName;
     [SerializeField]private GameObject mesh;
     [SerializeField]private float moduleMovingSpeed;
     [SerializeField]private float timeToCook;
-    
+
+    [SerializeField] private bool verticalMovement;
+    public List<GameObject> ElementVerticalMouvemet;
     void Start()
     {
         SecureSO();
+        if (verticalMovement)
+        {
+            foreach (var i in ElementVerticalMouvemet)
+            {
+                i.SetActive(true);
+            }
+        }
+        else
+        {
+            foreach (var i in ElementVerticalMouvemet)
+            {
+                i.SetActive(false);
+            }
+            GetComponent<BoxCollider>().isTrigger = true;
+        }
     }
 
     void SecureSO()
@@ -24,6 +42,7 @@ public class ModuleInteractible : MonoBehaviour
         mesh = moduleInteractibleSO.mesh;
         moduleMovingSpeed = moduleInteractibleSO.moduleMovingSpeed;
         timeToCook = moduleInteractibleSO.timeToCook;
+        verticalMovement = moduleInteractibleSO.verticalMovement;
 
         var selection = Selection.gameObjects;
 
@@ -45,6 +64,30 @@ public class ModuleInteractible : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (verticalMovement)
+        {
+            
+        }
+        else
+        {
+            
+        }
+    }
+
+    void TakeElement()
+    {
         
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            Debug.Log("ici");
+            if (other.GetComponent<PlayerController>().isInteractingg)
+            {
+                gameObject.transform.parent = other.GetComponent<PlayerController>().transform;
+            }
+        }
     }
 }

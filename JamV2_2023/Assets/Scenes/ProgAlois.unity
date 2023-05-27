@@ -2734,7 +2734,7 @@ PrefabInstance:
         type: 3}
       propertyPath: moduleInteractibleSO
       value: 
-      objectReference: {fileID: 11400000, guid: a38927f08e166f34a9335ca078abc901,
+      objectReference: {fileID: 11400000, guid: 2eddfabf6dcb76f4cbe930137d995faf,
         type: 2}
     - target: {fileID: 4846235148105489385, guid: 5f19daf7bdc9c0743b64b488aae0bdfe,
         type: 3}

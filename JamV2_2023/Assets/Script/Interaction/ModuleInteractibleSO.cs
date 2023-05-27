@@ -8,6 +8,10 @@ public class ModuleInteractibleSO : ScriptableObject
     public int id;
     public string moduleName;
     public GameObject mesh;
+    
+    
     public float moduleMovingSpeed;
     public float timeToCook;
+
+    public bool verticalMovement;
 }
