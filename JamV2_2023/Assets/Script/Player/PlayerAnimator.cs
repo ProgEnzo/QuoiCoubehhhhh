@@ -6,9 +6,25 @@ public class PlayerAnimator : MonoBehaviour
 {
     public PlayerController playerController;
     public Animator animator;
+
+    public GameObject p1;
+    public GameObject p2;
     void Start()
     {
-        GetComponent<Animator>();
+        //animator = GetComponentInChildren<Animator>(true);
+
+        switch (PlayerManager.instance.count)
+        {
+            case 1 :
+                p2.SetActive(false);
+                animator = p1.GetComponent<Animator>();
+                break;
+            
+            case 2:
+                p1.SetActive(false);
+                animator = p2.GetComponent<Animator>();
+                break;
+        }
     }
 
     // Update is called once per frame

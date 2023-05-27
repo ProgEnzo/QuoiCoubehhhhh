@@ -25,7 +25,8 @@ public class ModuleInteractibleSO : ScriptableObject
     public float speedMultiplierMalus;
     
     public bool canMoveModule;
-    public float movingModuleSpeed;
+    public float movingModuleSpeedBonus;
+    public float movingModuleSpeedMalus;
 
     public float modifiedTimeToCook;
     public bool canCookImmediately; 

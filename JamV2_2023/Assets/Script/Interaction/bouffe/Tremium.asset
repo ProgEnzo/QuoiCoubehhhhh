@@ -16,13 +16,14 @@ MonoBehaviour:
   moduleName: Tremium
   mesh: {fileID: 0}
   moduleMovingSpeed: 0
-  timeToCook: 0
+  timeToCook: 3.5
   verticalMovement: 0
-  effectDuration: 0
+  effectDuration: 6
   forceMultiplier: 0
   speedMultiplierBonus: 0
   speedMultiplierMalus: 0
   canMoveModule: 0
-  movingModuleSpeed: 0
-  modifiedTimeToCook: 0
+  movingModuleSpeedBonus: 0
+  movingModuleSpeedMalus: 0
+  modifiedTimeToCook: 5
   canCookImmediately: 1

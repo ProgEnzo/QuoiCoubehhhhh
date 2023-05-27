@@ -16,12 +16,14 @@ MonoBehaviour:
   moduleName: Chromodium
   mesh: {fileID: 919132149155446097, guid: 7d587da13e0109e47823a2cd7c196a0b, type: 3}
   moduleMovingSpeed: 0
-  timeToCook: 0
+  timeToCook: 3.5
   verticalMovement: 0
   effectDuration: 3
   forceMultiplier: 1.5
-  speedMultiplier: 0
+  speedMultiplierBonus: 0
+  speedMultiplierMalus: 0
   canMoveModule: 0
-  movingModuleSpeed: 0
+  movingModuleSpeedBonus: 0
+  movingModuleSpeedMalus: 0
   modifiedTimeToCook: 0
   canCookImmediately: 0
