@@ -10,18 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a00581cce2d06d444b25f41a4115e225, type: 3}
-  m_Name: Chromodium
+  m_Name: Tremium
   m_EditorClassIdentifier: 
   id: 0
-  moduleName: Chromodium
-  mesh: {fileID: 919132149155446097, guid: 7d587da13e0109e47823a2cd7c196a0b, type: 3}
+  moduleName: Tremium
+  mesh: {fileID: 0}
   moduleMovingSpeed: 0
   timeToCook: 0
   verticalMovement: 0
-  effectDuration: 3
-  forceMultiplier: 1.5
-  speedMultiplier: 0
+  effectDuration: 0
+  forceMultiplier: 0
+  speedMultiplierBonus: 0
+  speedMultiplierMalus: 0
   canMoveModule: 0
   movingModuleSpeed: 0
   modifiedTimeToCook: 0
-  canCookImmediately: 0
+  canCookImmediately: 1
