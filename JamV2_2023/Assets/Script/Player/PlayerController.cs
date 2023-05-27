@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using NaughtyAttributes;
+using Objects.Target;
 
 
 [RequireComponent(typeof(CharacterController))]
@@ -36,10 +37,42 @@ public class PlayerController : MonoBehaviour
 
     public Transform waypointInteract; // endroit ou interact object doit se situer quand player tient l'ojbet
 
+    public GameObject objectInHand;
+    public Rigidbody objectInHandRB;
+    public float shootForce = 10;
+    
+    [Tooltip("Porté pour detecter les cibles possbiles"), SerializeField] private float targetDectionRange;
+    [Tooltip("Porté pour detecter les cibles possbiles"), SerializeField] private float maxAngleFromTarget;
+    [SerializeField] private float maxHeightDifPlayerTarget;
+    [SerializeField] private Target lockedTarget;
+    
+    private Target LockedTarget
+    {
+        get => lockedTarget;
+
+        set
+        { 
+            if (lockedTarget) lockedTarget.ManagerLockUI(false);
+            
+            lockedTarget = value;
+            if (lockedTarget) lockedTarget.ManagerLockUI(value);
+        }
+    }
+      
+    public List<Target> targets = new();
+    private bool _islockedTargetNull;
+    
+    private bool _waitingForShoot;
+    private bool _canGather;
+    public bool isNeedingSnowBall;
+    
+    
+    
     private void Start()
     {
         controller = gameObject.GetComponent<CharacterController>();
         isDashingReload = true;
+        isNeedingSnowBall = true;
     }
 
 
@@ -72,15 +105,104 @@ public class PlayerController : MonoBehaviour
             isInteractingg = false;
         }
     }
-
-    private void Update()
+    
+    
+    
+    private void LoockingForTarget()
     {
-        
+        if (!objectInHand) return;
+         
+        Vector3 playerPos = transform.position;
+        Vector3 forward = transform.forward;
+         
+        foreach (var t in targets)
+        {
+            // Si la cible est trop loins OU
+            // que elle est en dehors de l'angle de dection, la skip et passé à la prochaine OU
+            // que la différence de hauteur entre la cible est le joueur est trop grande
+            if (
+                Vector3.Distance(playerPos, t.transform.position) > targetDectionRange ||
+                Vector3.Angle(new Vector3(t.transform.position.x,0, t.transform.position.z) 
+                              - new Vector3(playerPos.x,0, playerPos.z), forward) > maxAngleFromTarget || 
+                transform.position.y - t.transform.position.y > maxHeightDifPlayerTarget || 
+                transform.position.y - t.transform.position.y < -maxHeightDifPlayerTarget)
+            {
+                continue;
+            }
+
+            if (_islockedTargetNull) LockedTarget = t;
+            else
+            {
+                float angleFormCurrentT = Vector3.Angle(
+                    new Vector3(t.transform.position.x,0, t.transform.position.z)
+                    - new Vector3(playerPos.x,0, playerPos.z),forward);
+               
+                float angleFromCurrentLockedTarget = Vector3.Angle(
+                    new Vector3(LockedTarget.transform.position.x, 0, LockedTarget.transform.position.z) 
+                    - new Vector3(playerPos.x,0, playerPos.z), forward);
+
+                if (angleFormCurrentT < angleFromCurrentLockedTarget) LockedTarget = t;
+            }
+        }
+    }
+    
+    
+    public void ThrowSnowBall()
+    {
+        objectInHandRB = objectInHand.GetComponent<Rigidbody>();
+        objectInHandRB.constraints = RigidbodyConstraints.FreezeRotation;
+        objectInHandRB.useGravity = true;
+        objectInHand.transform.parent = null;
+        objectInHand = null;
+
+        // Par sécurité
+        if (!objectInHandRB)
+        {
+            Debug.LogError("snowball rb is null");
+            return; 
+        }
+         
+        Vector3 playerPos = transform.position;
+        Vector3 forward = transform.forward;
+         
+        // Tire de boule de neige
+        if (LockedTarget)
+        {
+            Vector3 topDownPlayerPos = new Vector3(playerPos.x, 0, playerPos.z);
+            Vector3 lockedTargetPos = LockedTarget.transform.position;
+            Vector3 topDownLockedTargetPos = new Vector3(lockedTargetPos.x, 0, lockedTargetPos.z);
+            
+            if ( Vector3.Distance(playerPos, LockedTarget.transform.position) <= targetDectionRange 
+                 &&  Vector3.Angle(topDownLockedTargetPos - topDownPlayerPos, forward) <= maxAngleFromTarget) 
+            {
+                var dir = LockedTarget.transform.position - transform.position;
+                ShootSnowball(dir.normalized);
+            }
+            else
+            {
+                ShootSnowball((transform.forward + (transform.up / 4f)).normalized);
+            }
+        }
+        else 
+        {
+            ShootSnowball((transform.forward + (transform.up / 4f)).normalized);
+        }
+
+        objectInHandRB = null;
+        LockedTarget = null;
+        _waitingForShoot = false;
+        isNeedingSnowBall = true;
+    }
+    
+    private void ShootSnowball(Vector3 dir)
+    {
+        objectInHandRB.AddForce(dir * shootForce, ForceMode.Impulse);
     }
 
     void FixedUpdate()
     {
         Movement();
+        LoockingForTarget();
     }
 
     void Movement()
