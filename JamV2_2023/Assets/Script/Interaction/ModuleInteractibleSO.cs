@@ -14,4 +14,19 @@ public class ModuleInteractibleSO : ScriptableObject
     public float timeToCook;
 
     public bool verticalMovement;
+    
+    
+    [Space]
+    
+    public float effectDuration;
+    public float forceMultiplier;
+    
+    public float speedMultiplierBonus;
+    public float speedMultiplierMalus;
+    
+    public bool canMoveModule;
+    public float movingModuleSpeed;
+
+    public float modifiedTimeToCook;
+    public bool canCookImmediately; 
 }

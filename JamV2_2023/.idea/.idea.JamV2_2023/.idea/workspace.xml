@@ -20,6 +20,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Player/PlayerAnimator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Player/Target.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.4.4/InputSystem/Plugins/PlayerInput/PlayerInputManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@13.1.8/Runtime/Data/UniversalRenderPipelineAsset.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -78,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1685131345629</updated>
       <workItem from="1685131349897" duration="4144000" />
-      <workItem from="1685177537293" duration="7541000" />
+      <workItem from="1685177537293" duration="17910000" />
     </task>
     <servers />
   </component>

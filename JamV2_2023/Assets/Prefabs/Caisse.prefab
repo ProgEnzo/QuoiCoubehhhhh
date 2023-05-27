@@ -324,6 +324,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moduleInteractibleSO: {fileID: 0}
+  box1: {fileID: 4846235148105489384}
+  box2: {fileID: 8881992217260444698}
   moduleName: 
   mesh: {fileID: 0}
   moduleMovingSpeed: 0
@@ -334,6 +336,13 @@ MonoBehaviour:
   - {fileID: 4846235148525041858}
   - {fileID: 7556040049421822839}
   - {fileID: 1833419124066917378}
+  effectDuration: 0
+  forceMultiplier: 0
+  speedMultiplier: 0
+  canMoveModule: 0
+  movingModuleSpeed: 0
+  modifiedTimeToCook: 0
+  canCookImmediately: 0
   parent: {fileID: 0}
   isOn: 0
 --- !u!54 &8202026781739193995
