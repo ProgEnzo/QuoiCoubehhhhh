@@ -2,13 +2,18 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Cinemachine;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class CameraManager : MonoBehaviour
 {
+    
+    
 
-    public CinemachineTargetGroup targetGroup;
-
+    public int count;
+    
+    
 
     public static CameraManager instance;
     private void Awake()
@@ -30,10 +35,5 @@ public class CameraManager : MonoBehaviour
     }
 
 
-    public void AddPlayer()
-    {
-        Transform p = GameObject.Find("Player(Clone)").transform;
-        p.name = "Player";
-        targetGroup.AddMember(p, 1,1); 
-    }
+    
 }
