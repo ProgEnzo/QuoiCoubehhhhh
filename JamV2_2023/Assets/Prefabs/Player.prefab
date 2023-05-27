@@ -260,6 +260,7 @@ Transform:
   m_Children:
   - {fileID: 7447469527861817952}
   - {fileID: 2228101280106693032}
+  - {fileID: 3059043924413389730}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -455,7 +456,90 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerController: {fileID: 6301762467259059125}
-  animator: {fileID: 8177286501070784727}
+  animator: {fileID: 5749763563047201414}
+--- !u!1001 &362930964844670939
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 6301762467259059131}
+    m_Modifications:
+    - target: {fileID: 2607966107197517507, guid: 97fd0f0673bda804aaf559795c6e4d02,
+        type: 3}
+      propertyPath: m_Name
+      value: RobotJamB
+      objectReference: {fileID: 0}
+    - target: {fileID: 3421200763260793977, guid: 97fd0f0673bda804aaf559795c6e4d02,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3421200763260793977, guid: 97fd0f0673bda804aaf559795c6e4d02,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3421200763260793977, guid: 97fd0f0673bda804aaf559795c6e4d02,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3421200763260793977, guid: 97fd0f0673bda804aaf559795c6e4d02,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3421200763260793977, guid: 97fd0f0673bda804aaf559795c6e4d02,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3421200763260793977, guid: 97fd0f0673bda804aaf559795c6e4d02,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3421200763260793977, guid: 97fd0f0673bda804aaf559795c6e4d02,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3421200763260793977, guid: 97fd0f0673bda804aaf559795c6e4d02,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3421200763260793977, guid: 97fd0f0673bda804aaf559795c6e4d02,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3421200763260793977, guid: 97fd0f0673bda804aaf559795c6e4d02,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3421200763260793977, guid: 97fd0f0673bda804aaf559795c6e4d02,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 97fd0f0673bda804aaf559795c6e4d02, type: 3}
+--- !u!4 &3059043924413389730 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3421200763260793977, guid: 97fd0f0673bda804aaf559795c6e4d02,
+    type: 3}
+  m_PrefabInstance: {fileID: 362930964844670939}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &5749763563047201414 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5386904066459157853, guid: 97fd0f0673bda804aaf559795c6e4d02,
+    type: 3}
+  m_PrefabInstance: {fileID: 362930964844670939}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5910293340102739567
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -468,6 +552,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RobotJam (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5162684938553941373, guid: 7ad594fc008a17849a9c65b8fac3c44e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5543467377761716167, guid: 7ad594fc008a17849a9c65b8fac3c44e,
         type: 3}
@@ -530,12 +619,6 @@ PrefabInstance:
 --- !u!4 &2228101280106693032 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5543467377761716167, guid: 7ad594fc008a17849a9c65b8fac3c44e,
-    type: 3}
-  m_PrefabInstance: {fileID: 5910293340102739567}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &8177286501070784727 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 2557511075793047224, guid: 7ad594fc008a17849a9c65b8fac3c44e,
     type: 3}
   m_PrefabInstance: {fileID: 5910293340102739567}
   m_PrefabAsset: {fileID: 0}
