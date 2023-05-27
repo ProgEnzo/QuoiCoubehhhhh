@@ -49,7 +49,7 @@ PrefabInstance:
     - target: {fileID: 2422652687133106411, guid: 38122c9103ff4e44c8a0dabf9e30b458,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.55244505
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2422652687133106411, guid: 38122c9103ff4e44c8a0dabf9e30b458,
         type: 3}
@@ -118,6 +118,21 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 7389757078099810014}
     m_Modifications:
+    - target: {fileID: 57993407631560899, guid: 38122c9103ff4e44c8a0dabf9e30b458,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 57993407631560899, guid: 38122c9103ff4e44c8a0dabf9e30b458,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 57993407631560899, guid: 38122c9103ff4e44c8a0dabf9e30b458,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2422652687133106411, guid: 38122c9103ff4e44c8a0dabf9e30b458,
         type: 3}
       propertyPath: m_RootOrder
@@ -126,7 +141,7 @@ PrefabInstance:
     - target: {fileID: 2422652687133106411, guid: 38122c9103ff4e44c8a0dabf9e30b458,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.55244505
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2422652687133106411, guid: 38122c9103ff4e44c8a0dabf9e30b458,
         type: 3}
@@ -177,6 +192,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: "Rebord_barri\xE8re"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7944308289104554330, guid: 38122c9103ff4e44c8a0dabf9e30b458,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.055
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
