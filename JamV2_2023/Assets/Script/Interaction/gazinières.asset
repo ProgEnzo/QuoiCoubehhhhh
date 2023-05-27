@@ -15,6 +15,15 @@ MonoBehaviour:
   id: 0
   moduleName: "gazini\xE8res "
   mesh: {fileID: 919132149155446097, guid: 18f4333026728284296c45ee3ff2a51f, type: 3}
-  moduleMovingSpeed: 5
+  moduleMovingSpeed: 2.5
   timeToCook: 3
   verticalMovement: 1
+  effectDuration: 0
+  forceMultiplier: 0
+  speedMultiplierBonus: 0
+  speedMultiplierMalus: 0
+  canMoveModule: 0
+  movingModuleSpeedBonus: 0
+  movingModuleSpeedMalus: 0
+  modifiedTimeToCook: 0
+  canCookImmediately: 0
