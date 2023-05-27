@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     private CharacterController controller;
     private Vector3 playerVelocity;
     private bool groundedPlayer;
+
+    public bool isWalking;
     
     [SerializeField]
     private float maxSpeed = 2.0f;
@@ -30,7 +32,7 @@ public class PlayerController : MonoBehaviour
 
 
     public GameObject isInteracting;
-    public bool haha;
+    public bool isInteractingg;
 
     private void Start()
     {
@@ -51,15 +53,24 @@ public class PlayerController : MonoBehaviour
         {
             isDashing = true;
         }
+        else
+        {
+            isDashing = false;
+        }
     }
 
     public void OnInteract(InputAction.CallbackContext ctx)
     {
-        if (ctx.started)
+        if (ctx.performed)
         {
             isInteracting.SetActive(true);
             isInteracting.GetComponent<InteractSphere>().StartCoroutine(isInteracting.GetComponent<InteractSphere>().start());
-        }   
+            isInteractingg = true;
+        }
+        else
+        {
+            isInteractingg = false;
+        }
     }
 
     private void Update()
@@ -87,16 +98,21 @@ public class PlayerController : MonoBehaviour
         {
             //gameObject.transform.forward = move;
             transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(move), 0.1f);
+            isWalking = true;
+        }
+        else
+        {
+            isWalking = false;
         }
 
         if (isDashing && isDashingReload)
         {
             Dash();
         }
-        else if (isDashing && !isDashingReload)
+        /*else if (isDashing && !isDashingReload)
         {
             isDashing = false;
-        }
+        }*/
 
         // Changes the height position of the player..
         if (Input.GetButtonDown("Jump") && groundedPlayer)
@@ -110,7 +126,7 @@ public class PlayerController : MonoBehaviour
 
     void Dash()
     {
-        isDashing = false;
+        //isDashing = false;
         isDashingReload = false;
         StartCoroutine(DashDuration());
         StartCoroutine(DashReload());

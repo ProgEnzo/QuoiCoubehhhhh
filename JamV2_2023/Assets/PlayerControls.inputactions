@@ -20,7 +20,7 @@
                     "id": "9b2b3ff9-3927-4c3d-b9cf-f27bdacf3e9b",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Hold(duration=2,pressPoint=0.1)",
                     "initialStateCheck": false
                 },
                 {
@@ -29,7 +29,7 @@
                     "id": "28d5816a-bf48-4ffd-af09-172cfdb9a890",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Press",
                     "initialStateCheck": false
                 }
             ],

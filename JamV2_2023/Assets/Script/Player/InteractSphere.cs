@@ -21,6 +21,7 @@ public class InteractSphere : MonoBehaviour
     {
         yield return new WaitForSeconds(0.2f);
         playercontroller.isInteracting.SetActive(false);
+        //playercontroller.isInteractingg = false;
     }
     
     
