@@ -45,7 +45,13 @@ public class PlayerController : MonoBehaviour
     [Tooltip("Porté pour detecter les cibles possbiles"), SerializeField] private float maxAngleFromTarget;
     [SerializeField] private float maxHeightDifPlayerTarget;
     [SerializeField] private Target lockedTarget;
-
+    
+    [SerializeField] private ParticleSystem vfxuppuissance;
+    [SerializeField] private ParticleSystem vfxupspeed;
+    [SerializeField] private ParticleSystem vfxweak;
+    [SerializeField] private ParticleSystem vfxslow;
+    [SerializeField] private ParticleSystem vfxupdash;
+    
     public CapsuleCollider playerInteract;
     
     private Target LockedTarget
@@ -67,9 +73,8 @@ public class PlayerController : MonoBehaviour
     private bool _waitingForShoot;
     private bool _canGather;
     public bool isNeedingSnowBall;
-    
-    
-    
+
+
     private void Start()
     {
         controller = gameObject.GetComponent<CharacterController>();
@@ -274,6 +279,7 @@ public class PlayerController : MonoBehaviour
     void Dash()
     {
         //isDashing = false;
+        vfxupdash.Play();
         isDashingReload = false;
         StartCoroutine(DashDuration());
         StartCoroutine(DashReload());

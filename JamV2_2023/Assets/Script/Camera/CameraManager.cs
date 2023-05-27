@@ -37,7 +37,7 @@ public class CameraManager : MonoBehaviour
     {
         Transform p = GameObject.Find("Player(Clone)").transform;
         p.name = "Player";
-        targetGroup.AddMember(p, 1,1); 
-        count
+        targetGroup.AddMember(p, 1,1);
+        //count
     }
 }
