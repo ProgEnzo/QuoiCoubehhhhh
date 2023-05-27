@@ -453,7 +453,7 @@ CharacterController:
   m_GameObject: {fileID: 6301762467259059135}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Height: 2.2
   m_Radius: 0.5
@@ -568,7 +568,7 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 30ff58e6-653a-444e-9c6d-6542f29d3415
     m_ActionName: Player/Throw[/XInputControllerWindows/leftShoulder,/XInputControllerWindows1/leftShoulder]
-  m_NeverAutoSwitchControlSchemes: 1
+  m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Gamepad
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
