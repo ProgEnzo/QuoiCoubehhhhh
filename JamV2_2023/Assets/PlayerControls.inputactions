@@ -20,7 +20,7 @@
                     "id": "9b2b3ff9-3927-4c3d-b9cf-f27bdacf3e9b",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Hold(duration=2,pressPoint=0.1)",
                     "initialStateCheck": false
                 },
                 {
@@ -92,10 +92,10 @@
                 {
                     "name": "",
                     "id": "aac10e5f-c4ca-430b-9a6d-b2a2a15d3665",
-                    "path": "",
+                    "path": "<Gamepad>/buttonWest",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Gamepad",
                     "action": "Interact",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -104,7 +104,7 @@
                     "name": "",
                     "id": "70fa4cb2-549a-4193-8c52-e2d117dc4d45",
                     "path": "<Gamepad>/buttonSouth",
-                    "interactions": "",
+                    "interactions": "Press(behavior=1)",
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "Dash",
