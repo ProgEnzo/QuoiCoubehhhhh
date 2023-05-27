@@ -321,12 +321,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcd990e1e616cee49b53a3e489a4ca51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 0
+  moduleInteractibleSO: {fileID: 0}
   moduleName: 
-  value: 0
-  currentDurability: 0
-  maxDurability: 0
-  weight: 0
+  mesh: {fileID: 0}
+  moduleMovingSpeed: 0
+  timeToCook: 0
+  verticalMovement: 0
+  ElementVerticalMouvemet:
+  - {fileID: 4846235146708303932}
+  - {fileID: 4846235148525041858}
+  - {fileID: 7556040049421822839}
+  - {fileID: 1833419124066917378}
 --- !u!1 &4846235148525041858
 GameObject:
   m_ObjectHideFlags: 0
