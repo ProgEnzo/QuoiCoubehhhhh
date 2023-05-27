@@ -97,6 +97,10 @@ public class ModuleInteractible : MonoBehaviour
                     {
                         gameObject.transform.parent = other.GetComponent<InteractSphere>().playercontroller.transform; // set child
                         gameObject.transform.position = other.GetComponent<InteractSphere>().playercontroller.waypointInteract.transform.position; // set position
+                        other.GetComponent<InteractSphere>().playercontroller.objectInHand = gameObject; // dans la main 
+                        other.GetComponent<InteractSphere>().playercontroller.objectInHand.GetComponent<Rigidbody>()
+                            .constraints = RigidbodyConstraints.FreezeAll;
+                        other.GetComponent<InteractSphere>().playercontroller.isInteractingg = false;
                         isOn = true;
                     }
                 }
@@ -105,6 +109,10 @@ public class ModuleInteractible : MonoBehaviour
                     if (other.GetComponent<InteractSphere>().playercontroller.isInteractingg)
                     {
                         gameObject.transform.parent = null;
+                        other.GetComponent<InteractSphere>().playercontroller.objectInHand.GetComponent<Rigidbody>()
+                            .constraints = RigidbodyConstraints.None;
+                        other.GetComponent<InteractSphere>().playercontroller.ThrowSnowBall();
+                        other.GetComponent<InteractSphere>().playercontroller.isInteractingg = false;
                         isOn = false;
                     }
                 }
