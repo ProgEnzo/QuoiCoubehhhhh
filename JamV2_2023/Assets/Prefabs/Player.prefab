@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 9022592643587168249}
   m_Layer: 0
   m_Name: InteractSphere
-  m_TagString: Player
+  m_TagString: Interact
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -189,8 +189,40 @@ Transform:
   m_Children:
   - {fileID: 6080555554693761495}
   - {fileID: 6466441456883576326}
+  - {fileID: 5685491634126710762}
   m_Father: {fileID: 6301762467259059131}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5869698533615552627
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5685491634126710762}
+  m_Layer: 0
+  m_Name: WaypointInteract
+  m_TagString: Untagged
+  m_Icon: {fileID: 7422848464349959988, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5685491634126710762
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5869698533615552627}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.495, z: 0.629}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7447469527861817952}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6301762467259059135
 GameObject:
@@ -400,6 +432,7 @@ MonoBehaviour:
   directionOfPlayer: {fileID: 1280027501439561497}
   isInteracting: {fileID: 4488631272548238293}
   isInteractingg: 0
+  waypointInteract: {fileID: 5685491634126710762}
 --- !u!114 &2903448121827710952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -419,6 +452,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 6301762467259059131}
     m_Modifications:
     - target: {fileID: 5162684938553941373, guid: 7ad594fc008a17849a9c65b8fac3c44e,
@@ -482,6 +516,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ad594fc008a17849a9c65b8fac3c44e, type: 3}
 --- !u!4 &2228101280106693032 stripped
 Transform:

@@ -15,12 +15,12 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Interact",
+                    "name": "InteractBouffe",
                     "type": "Button",
                     "id": "9b2b3ff9-3927-4c3d-b9cf-f27bdacf3e9b",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "Hold(duration=2,pressPoint=0.1)",
+                    "interactions": "",
                     "initialStateCheck": false
                 },
                 {
@@ -93,10 +93,10 @@
                     "name": "",
                     "id": "aac10e5f-c4ca-430b-9a6d-b2a2a15d3665",
                     "path": "<Gamepad>/buttonWest",
-                    "interactions": "",
+                    "interactions": "Tap(duration=0.05,pressPoint=0.05)",
                     "processors": "",
                     "groups": "Gamepad",
-                    "action": "Interact",
+                    "action": "InteractBouffe",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

@@ -34,11 +34,12 @@ public class PlayerController : MonoBehaviour
     public GameObject isInteracting;
     public bool isInteractingg;
 
+    public Transform waypointInteract; // endroit ou interact object doit se situer quand player tient l'ojbet
+
     private void Start()
     {
         controller = gameObject.GetComponent<CharacterController>();
         isDashingReload = true;
-        isInteracting.SetActive(false); 
     }
 
 
@@ -63,8 +64,7 @@ public class PlayerController : MonoBehaviour
     {
         if (ctx.started)
         {
-            isInteracting.SetActive(true);
-            isInteracting.GetComponent<InteractSphere>().StartCoroutine(isInteracting.GetComponent<InteractSphere>().start());
+            //isInteracting.GetComponent<InteractSphere>().StartCoroutine(isInteracting.GetComponent<InteractSphere>().start());
             isInteractingg = true;
         }
         else

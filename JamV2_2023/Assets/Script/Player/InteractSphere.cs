@@ -8,26 +8,29 @@ public class InteractSphere : MonoBehaviour
     public PlayerController playercontroller;
     void Start()
     {
-        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    public IEnumerator start()
-    {
-        yield return new WaitForSeconds(0.2f);
-        playercontroller.isInteracting.SetActive(false);
-        //playercontroller.isInteractingg = false;
+        /*if (playercontroller.isInteractingg)
+        {
+            GetComponent<SphereCollider>().enabled = true;
+        }
+        else
+        {
+            GetComponent<SphereCollider>().enabled = false;
+        }*/
     }
     
     
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.magenta;
-        Gizmos.DrawWireSphere(transform.position, GetComponent<SphereCollider>().radius);
+
+        if (playercontroller.isInteractingg)
+        {
+            Gizmos.color = Color.magenta;
+            Gizmos.DrawWireSphere(transform.position, GetComponent<SphereCollider>().radius);
+        }
     }
 }

@@ -14,26 +14,30 @@ public class ModuleInteractible : MonoBehaviour
     [SerializeField]private float moduleMovingSpeed;
     [SerializeField]private float timeToCook;
 
-    [SerializeField] private bool verticalMovement;
+    [SerializeField] private bool Cuisine;
     public List<GameObject> ElementVerticalMouvemet;
+    
+    
+    
     void Start()
     {
         SecureSO();
-        if (verticalMovement)
+        if (Cuisine)
         {
-            foreach (var i in ElementVerticalMouvemet)
+            /*foreach (var i in ElementVerticalMouvemet)
             {
                 i.SetActive(true);
-            }
+            }*/
         }
         else
         {
-            foreach (var i in ElementVerticalMouvemet)
+            /*foreach (var i in ElementVerticalMouvemet)
             {
                 i.SetActive(false);
-            }
-            GetComponent<BoxCollider>().isTrigger = true;
+            }*/
+            
         }
+        GetComponent<BoxCollider>().isTrigger = true;
     }
 
     void SecureSO()
@@ -42,7 +46,7 @@ public class ModuleInteractible : MonoBehaviour
         mesh = moduleInteractibleSO.mesh;
         moduleMovingSpeed = moduleInteractibleSO.moduleMovingSpeed;
         timeToCook = moduleInteractibleSO.timeToCook;
-        verticalMovement = moduleInteractibleSO.verticalMovement;
+        Cuisine = moduleInteractibleSO.verticalMovement;
 
         var selection = Selection.gameObjects;
 
@@ -64,14 +68,7 @@ public class ModuleInteractible : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (verticalMovement)
-        {
-            
-        }
-        else
-        {
-            
-        }
+
     }
 
     void TakeElement()
@@ -79,15 +76,40 @@ public class ModuleInteractible : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
+    public Transform parent;
+    public bool isOn;
+    
+    private void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Interact"))
         {
-            Debug.Log("ici");
-            if (other.GetComponent<PlayerController>().isInteractingg)
+
+
+            if (Cuisine)
             {
-                gameObject.transform.parent = other.GetComponent<PlayerController>().transform;
+                
+            }
+            else
+            {
+                if (!isOn)
+                {
+                    if (other.GetComponent<InteractSphere>().playercontroller.isInteractingg)
+                    {
+                        gameObject.transform.parent = other.GetComponent<InteractSphere>().playercontroller.transform; // set child
+                        gameObject.transform.position = other.GetComponent<InteractSphere>().playercontroller.waypointInteract.transform.position; // set position
+                        isOn = true;
+                    }
+                }
+                else
+                {
+                    if (other.GetComponent<InteractSphere>().playercontroller.isInteractingg)
+                    {
+                        gameObject.transform.parent = null;
+                        isOn = false;
+                    }
+                }
             }
         }
     }
+    
 }

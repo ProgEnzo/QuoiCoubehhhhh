@@ -39,7 +39,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\unity\2021.3.9f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity 2022.1.13f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath D:\Fork\QuoiCoubehhhhh\JamV2_2023 -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="D:\Fork\QuoiCoubehhhhh\JamV2_2023" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -76,6 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1685131345629</updated>
       <workItem from="1685131349897" duration="4144000" />
+      <workItem from="1685177537293" duration="4136000" />
     </task>
     <servers />
   </component>

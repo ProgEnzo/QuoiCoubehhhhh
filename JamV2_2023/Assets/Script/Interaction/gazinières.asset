@@ -17,3 +17,4 @@ MonoBehaviour:
   mesh: {fileID: 919132149155446097, guid: 18f4333026728284296c45ee3ff2a51f, type: 3}
   moduleMovingSpeed: 5
   timeToCook: 3
+  verticalMovement: 1
