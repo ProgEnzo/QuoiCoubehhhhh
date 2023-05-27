@@ -27,12 +27,16 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private GameObject directionOfPlayer;
     private Vector3 movementInput = Vector3.zero;
-    
+
+
+    public GameObject isInteracting;
+    public bool haha;
 
     private void Start()
     {
         controller = gameObject.GetComponent<CharacterController>();
         isDashingReload = true;
+        isInteracting.SetActive(false); 
     }
 
 
@@ -47,6 +51,15 @@ public class PlayerController : MonoBehaviour
         {
             isDashing = true;
         }
+    }
+
+    public void OnInteract(InputAction.CallbackContext ctx)
+    {
+        if (ctx.started)
+        {
+            isInteracting.SetActive(true);
+            isInteracting.GetComponent<InteractSphere>().StartCoroutine(isInteracting.GetComponent<InteractSphere>().start());
+        }   
     }
 
     private void Update()
