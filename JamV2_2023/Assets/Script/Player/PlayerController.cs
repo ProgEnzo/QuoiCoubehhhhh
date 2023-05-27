@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
     public bool isWalking;
     
     [SerializeField]
-    private float maxSpeed = 2.0f;
+    public float maxSpeed = 2.0f;
     [SerializeField]
     private float dashSpeed = 2.0f;
     [SerializeField] private float timeToDash = 2.0f;
@@ -45,6 +45,8 @@ public class PlayerController : MonoBehaviour
     [Tooltip("Porté pour detecter les cibles possbiles"), SerializeField] private float maxAngleFromTarget;
     [SerializeField] private float maxHeightDifPlayerTarget;
     [SerializeField] private Target lockedTarget;
+
+    public CapsuleCollider playerInteract;
     
     private Target LockedTarget
     {
@@ -103,6 +105,34 @@ public class PlayerController : MonoBehaviour
         else
         {
             isInteractingg = false;
+        }
+    }
+
+    public bool isEat;
+    public void OnEat(InputAction.CallbackContext ctx)
+    {
+        if (ctx.started)
+        {
+            //isInteracting.GetComponent<InteractSphere>().StartCoroutine(isInteracting.GetComponent<InteractSphere>().start());
+            isEat = true;
+        }
+        else
+        {
+            isEat = false;
+        }
+    }
+
+    public bool isThrow;
+    public void OnThrow(InputAction.CallbackContext ctx)
+    {
+        if (ctx.started)
+        {
+            //isInteracting.GetComponent<InteractSphere>().StartCoroutine(isInteracting.GetComponent<InteractSphere>().start());
+            isThrow = true;
+        }
+        else
+        {
+            isThrow = false;
         }
     }
     

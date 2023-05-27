@@ -15,7 +15,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "InteractBouffe",
+                    "name": "Interact",
                     "type": "Button",
                     "id": "9b2b3ff9-3927-4c3d-b9cf-f27bdacf3e9b",
                     "expectedControlType": "Button",
@@ -27,6 +27,24 @@
                     "name": "Dash",
                     "type": "Button",
                     "id": "28d5816a-bf48-4ffd-af09-172cfdb9a890",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Eat",
+                    "type": "Button",
+                    "id": "967b3095-7894-43e2-b56e-ee45787c4a2c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Throw",
+                    "type": "Button",
+                    "id": "30ff58e6-653a-444e-9c6d-6542f29d3415",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -96,7 +114,7 @@
                     "interactions": "Tap(duration=0.05,pressPoint=0.05)",
                     "processors": "",
                     "groups": "Gamepad",
-                    "action": "InteractBouffe",
+                    "action": "Interact",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -108,6 +126,28 @@
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "Dash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ccd54dcb-8e85-4af7-98a9-1c2d84aed536",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "Tap",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Eat",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d3bbd985-7e00-46cd-ad10-59ba29e4e856",
+                    "path": "<Gamepad>/leftShoulder",
+                    "interactions": "Tap",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Throw",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
