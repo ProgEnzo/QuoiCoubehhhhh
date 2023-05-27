@@ -433,6 +433,15 @@ MonoBehaviour:
   isInteracting: {fileID: 4488631272548238293}
   isInteractingg: 0
   waypointInteract: {fileID: 5685491634126710762}
+  objectInHand: {fileID: 0}
+  objectInHandRB: {fileID: 0}
+  shootForce: 15
+  targetDectionRange: 0
+  maxAngleFromTarget: 0
+  maxHeightDifPlayerTarget: 0
+  lockedTarget: {fileID: 0}
+  targets: []
+  isNeedingSnowBall: 0
 --- !u!114 &2903448121827710952
 MonoBehaviour:
   m_ObjectHideFlags: 0
