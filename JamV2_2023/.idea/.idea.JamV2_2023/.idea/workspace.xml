@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b650fd27-a58a-47fb-81f8-e25658626dc5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LDEnzo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LDEnzo.unity" afterDir="false" />
-    </list>
+    <list default="true" id="b650fd27-a58a-47fb-81f8-e25658626dc5" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../AventurePuzzle/SnowTest/Assets/Scripts/Objects/Target/Target.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../AventurePuzzle/SnowTest/Assets/Scripts/Player/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Caverne-Merveilleuse/CarverneMerveilleuse/Assets/Script/PlayerCharacter/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Camera/CameraManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Interaction/ModuleInteractible.cs" root0="FORCE_HIGHLIGHTING" />
@@ -48,6 +49,14 @@
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../quoicoubehProject/qsd\JamV2_2023.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="D:\Fork\quoicoubehProject\qsd" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity 2022.1.13f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath D:\Fork\QuoiCoubehhhhh\JamV2_2023 -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
@@ -86,7 +95,7 @@
       <option name="presentableId" value="Default" />
       <updated>1685131345629</updated>
       <workItem from="1685131349897" duration="4144000" />
-      <workItem from="1685177537293" duration="54123000" />
+      <workItem from="1685177537293" duration="54503000" />
     </task>
     <servers />
   </component>
