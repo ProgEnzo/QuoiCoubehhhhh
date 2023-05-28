@@ -147,6 +147,15 @@ public class PlayerController : MonoBehaviour
             isThrow = false;
         }
     }
+
+
+    public void OnStart(InputAction.CallbackContext ctx)
+    {
+        if (ctx.started)
+        {
+            SceneManager.LoadScene(0);
+        }
+    }
     
     
     

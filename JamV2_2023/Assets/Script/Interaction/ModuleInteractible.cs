@@ -41,8 +41,8 @@ public class ModuleInteractible : MonoBehaviour
 
     public float modifiedTimeToCook;
     public bool canCookImmediately;
-
-
+    [SerializeField] private ParticleSystem vfxcooked;
+    [SerializeField] private ParticleSystem vfxhit;
 
     public MeshRenderer[] meshRenderers;
     void Start()
@@ -226,6 +226,7 @@ public class ModuleInteractible : MonoBehaviour
 
         if (other.CompareTag("PlayerInteract") && thrown)
         {
+            vfxhit.Play();
             PowerTo(other.GetComponent<InteractSphere>().playercontroller);
             other.GetComponent<InteractSphere>().playercontroller.life--;
             player.vfxslow.Play();
@@ -275,7 +276,7 @@ public class ModuleInteractible : MonoBehaviour
         player.canWalk = true;
         iscooking = false;
         isCoocked = true;
-        
+        vfxcooked.Play();
         player.isCuisine = false;
         
         other.occupied = false;

@@ -957,7 +957,7 @@ Transform:
   - {fileID: 1277437136074410029}
   - {fileID: 374116118568436944}
   m_Father: {fileID: 0}
-  m_RootOrder: 67
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &539658886
 BoxCollider:
@@ -1215,6 +1215,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 285207463477844335}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &765389960377912027 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 678482994563568564, guid: cb239dd5482b53743bd3ad0fa48f71fd,
+    type: 3}
+  m_PrefabInstance: {fileID: 285207463477844335}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1043410198736494186 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 977196050355209989, guid: cb239dd5482b53743bd3ad0fa48f71fd,
@@ -1297,9 +1303,18 @@ MonoBehaviour:
   modifiedMovingModuleSpeedMalus: 0
   modifiedTimeToCook: 0
   canCookImmediately: 0
+  vfxcooked: {fileID: 1876428072919226417}
+  vfxhit: {fileID: 765389960377912027}
+  meshRenderers: []
   parent: {fileID: 0}
   isOn: 0
   thrown: 0
   player: {fileID: 0}
   isCoocked: 0
   iscooking: 0
+--- !u!198 &1876428072919226417 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1873264136843477342, guid: cb239dd5482b53743bd3ad0fa48f71fd,
+    type: 3}
+  m_PrefabInstance: {fileID: 285207463477844335}
+  m_PrefabAsset: {fileID: 0}

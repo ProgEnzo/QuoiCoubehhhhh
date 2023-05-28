@@ -1303,6 +1303,12 @@ PrefabInstance:
       insertIndex: 0
       addedObject: {fileID: 1685301793}
   m_SourcePrefab: {fileID: 100100000, guid: 59d0367097297c543ac4309649458239, type: 3}
+--- !u!198 &2221921254392796935 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5625158255278424177, guid: 59d0367097297c543ac4309649458239,
+    type: 3}
+  m_PrefabInstance: {fileID: 5820139710537996150}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &4798552729601035880 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1320302849797314846, guid: 59d0367097297c543ac4309649458239,
@@ -1385,6 +1391,8 @@ MonoBehaviour:
   modifiedMovingModuleSpeedMalus: 0
   modifiedTimeToCook: 0
   canCookImmediately: 0
+  vfxcooked: {fileID: 6651134351174167877}
+  vfxhit: {fileID: 2221921254392796935}
   meshRenderers: []
   parent: {fileID: 0}
   isOn: 0
@@ -1395,6 +1403,12 @@ MonoBehaviour:
 --- !u!4 &5322184815442236626 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1808609623677764516, guid: 59d0367097297c543ac4309649458239,
+    type: 3}
+  m_PrefabInstance: {fileID: 5820139710537996150}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &6651134351174167877 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 903210658460432947, guid: 59d0367097297c543ac4309649458239,
     type: 3}
   m_PrefabInstance: {fileID: 5820139710537996150}
   m_PrefabAsset: {fileID: 0}
