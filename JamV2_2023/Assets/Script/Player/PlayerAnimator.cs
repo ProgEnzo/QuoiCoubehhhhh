@@ -48,6 +48,14 @@ public class PlayerAnimator : MonoBehaviour
             animator.SetBool("grab", false);
         }
         
-        
+        if (playerController.isCuisine)
+        {
+            animator.SetBool("Cuisine", true);
+        }
+        else
+        {
+            animator.SetBool("Cuisine", false);
+        }
+
     }
 }

@@ -656,6 +656,77 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 450732213}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &506363135
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6940089922066816378, guid: fe9957c66d543e44abb9f47489622074,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940089922066816378, guid: fe9957c66d543e44abb9f47489622074,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.3093796
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940089922066816378, guid: fe9957c66d543e44abb9f47489622074,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000009536743
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940089922066816378, guid: fe9957c66d543e44abb9f47489622074,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.3098855
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940089922066816378, guid: fe9957c66d543e44abb9f47489622074,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940089922066816378, guid: fe9957c66d543e44abb9f47489622074,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940089922066816378, guid: fe9957c66d543e44abb9f47489622074,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940089922066816378, guid: fe9957c66d543e44abb9f47489622074,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940089922066816378, guid: fe9957c66d543e44abb9f47489622074,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940089922066816378, guid: fe9957c66d543e44abb9f47489622074,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940089922066816378, guid: fe9957c66d543e44abb9f47489622074,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7718034717567600576, guid: fe9957c66d543e44abb9f47489622074,
+        type: 3}
+      propertyPath: m_Name
+      value: caisse de Crokaium
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: fe9957c66d543e44abb9f47489622074, type: 3}
 --- !u!1 &557514743
 GameObject:
   m_ObjectHideFlags: 0
