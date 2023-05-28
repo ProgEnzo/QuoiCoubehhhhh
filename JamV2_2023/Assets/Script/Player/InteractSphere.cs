@@ -31,7 +31,7 @@ public class InteractSphere : MonoBehaviour
         if (playercontroller.isInteractingg)
         {
             Gizmos.color = Color.magenta;
-//            Gizmos.DrawWireSphere(transform.position, GetComponent<SphereCollider>().radius);
+            Gizmos.DrawWireSphere(transform.position, GetComponent<SphereCollider>().radius);
         }
     }
 }
