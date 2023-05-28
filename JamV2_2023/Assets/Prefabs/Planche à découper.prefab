@@ -39,7 +39,7 @@ Transform:
   - {fileID: 104886231861193066}
   - {fileID: 4460416631748784431}
   m_Father: {fileID: 0}
-  m_RootOrder: 79
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
 --- !u!65 &8857867373323010564
 BoxCollider:
@@ -83,7 +83,9 @@ MonoBehaviour:
     type: 2}
   box1: {fileID: 8857867373323010564}
   box2: {fileID: 8857867373323010565}
+  waypointCuisine: {fileID: 0}
   movingModuleSpeed: 5
+  occupied: 0
   moduleName: 
   mesh: {fileID: 0}
   moduleMovingSpeed: 0
@@ -102,6 +104,9 @@ MonoBehaviour:
   parent: {fileID: 0}
   isOn: 0
   thrown: 0
+  player: {fileID: 0}
+  isCoocked: 0
+  iscooking: 0
 --- !u!54 &738591465707681574
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -602,6 +607,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: "planche \xE0 d\xE9couper"
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ce3646914f673a340bfae940e6925029,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
