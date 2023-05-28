@@ -119,6 +119,7 @@ public class ModuleInteractible : MonoBehaviour
     {
         if (other.CompareTag("Interact"))
         {
+            player = other.GetComponent<InteractSphere>().playercontroller;
             if (Cuisine)
             {
                 if (!isOn)
@@ -150,13 +151,14 @@ public class ModuleInteractible : MonoBehaviour
                 {
                     if (other.GetComponent<InteractSphere>().playercontroller.isInteractingg)// repose la cuisine
                     {
-                        
+                        player.objectInHand = null;
                         other.GetComponent<InteractSphere>().playercontroller.maxSpeed = 5;
 
                         other.GetComponent<InteractSphere>().playercontroller.isInteractingg = false;
                         gameObject.transform.parent = null;
                         other.GetComponent<InteractSphere>().playercontroller.canRotatePlayer = true;
                         isOn = false;
+                        
                     }
                 }
             }
@@ -166,7 +168,7 @@ public class ModuleInteractible : MonoBehaviour
                 {
                     if (other.GetComponent<InteractSphere>().playercontroller.isInteractingg && !iscooking) // prend alliment
                     {
-                        player = other.GetComponent<InteractSphere>().playercontroller;
+                        
                         gameObject.transform.parent = other.GetComponent<InteractSphere>().playercontroller.transform; // set child
                         gameObject.transform.position = other.GetComponent<InteractSphere>().playercontroller.waypointInteract.transform.position; // set position
                         other.GetComponent<InteractSphere>().playercontroller.objectInHand = gameObject; // dans la main 
@@ -203,10 +205,11 @@ public class ModuleInteractible : MonoBehaviour
 
                     if (other.GetComponent<InteractSphere>().playercontroller.isInteractingg && !iscooking)
                     {
-                        Debug.Log("qsd");
-                        gameObject.transform.parent = null;
                         other.GetComponent<InteractSphere>().playercontroller.objectInHand.GetComponent<Rigidbody>()
                             .constraints = RigidbodyConstraints.None;
+                        gameObject.transform.parent = null;
+                        player.objectInHand = null;
+                        other.GetComponent<InteractSphere>().playercontroller.isInteractingg = false;
                         isOn = false;
                         Debug.Log("qsdqzd");
                     }
@@ -220,7 +223,7 @@ public class ModuleInteractible : MonoBehaviour
             thrown = false;
         }
 
-        if (other.CompareTag("Cuisine") && !other.GetComponent<ModuleInteractible>().occupied)
+        if (other.CompareTag("Cuisine") && !other.GetComponent<ModuleInteractible>().occupied && !isCoocked)
         {
             other.GetComponent<ModuleInteractible>().occupied = true;
             Debug.Log("cuisin");
@@ -233,7 +236,7 @@ public class ModuleInteractible : MonoBehaviour
             isOn = false;
             iscooking = true;
             
-            StartCoroutine(cook());
+            StartCoroutine(cook(other.GetComponent<ModuleInteractible>()));
 
             /* if (GetComponent<ModuleInteractible>().GetComponent<InteractSphere>().playercontroller.isInteractingg) // pose aliment et cuisinent 
              {
@@ -245,21 +248,24 @@ public class ModuleInteractible : MonoBehaviour
     public PlayerController player;
     public bool isCoocked;
     public bool iscooking;
-    IEnumerator cook()
+    
+    IEnumerator cook(ModuleInteractible other)
     {
         player.canRotatePlayer = false;
         yield return new WaitForSeconds(3);
+        
         gameObject.transform.parent = player.transform;
         gameObject.transform.position = player.waypointInteract.transform.position;
         player.objectInHand = gameObject; // dans la main 
         player.objectInHand.GetComponent<Rigidbody>()
             .constraints = RigidbodyConstraints.FreezeAll;
         player.isInteractingg = false;
-        
-        
+
         player.canRotatePlayer = true;
         iscooking = false;
         isCoocked = true;
+        
+        other.occupied = false;
     }
 
 
