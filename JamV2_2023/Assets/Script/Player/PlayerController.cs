@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using NaughtyAttributes;
 using Objects.Target;
+using UnityEngine.SceneManagement;
 
 
 [RequireComponent(typeof(CharacterController))]
@@ -240,6 +241,14 @@ public class PlayerController : MonoBehaviour
         objectInHandRB.AddForce(dir * shootForce, ForceMode.Impulse);
     }
 
+    private void Update()
+    {
+        if (life <= 0)
+        {
+            SceneManager.LoadScene(0);
+        }
+    }
+
     void FixedUpdate()
     {
         if (canWalk)
@@ -252,6 +261,7 @@ public class PlayerController : MonoBehaviour
 
     public bool canRotatePlayer = true;
     public bool isCuisine = false;
+    public int life = 3;
     void Movement()
     {
         groundedPlayer = controller.isGrounded;

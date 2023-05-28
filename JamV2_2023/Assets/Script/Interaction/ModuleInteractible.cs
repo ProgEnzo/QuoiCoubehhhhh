@@ -227,6 +227,8 @@ public class ModuleInteractible : MonoBehaviour
         if (other.CompareTag("PlayerInteract") && thrown)
         {
             PowerTo(other.GetComponent<InteractSphere>().playercontroller);
+            other.GetComponent<InteractSphere>().playercontroller.life--;
+            
             thrown = false;
         }
 
