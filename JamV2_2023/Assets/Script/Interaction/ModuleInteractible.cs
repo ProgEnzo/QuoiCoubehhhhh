@@ -119,13 +119,13 @@ public class ModuleInteractible : MonoBehaviour
     {
         if (other.CompareTag("Interact"))
         {
-            player = other.GetComponent<InteractSphere>().playercontroller;
             if (Cuisine)
             {
                 if (!isOn)
                 {
                     if (other.GetComponent<InteractSphere>().playercontroller.isInteractingg && other.GetComponent<InteractSphere>().playercontroller.objectInHand == null) // déplace la cuisine
                     {
+                        player = other.GetComponent<InteractSphere>().playercontroller;
                         if (!other.GetComponent<InteractSphere>().playercontroller.canMoveModule)
                         {
                             other.GetComponent<InteractSphere>().playercontroller.maxSpeed = 2.5f;
@@ -168,7 +168,7 @@ public class ModuleInteractible : MonoBehaviour
                 {
                     if (other.GetComponent<InteractSphere>().playercontroller.isInteractingg && !iscooking) // prend alliment
                     {
-                        
+                        player = other.GetComponent<InteractSphere>().playercontroller;
                         gameObject.transform.parent = other.GetComponent<InteractSphere>().playercontroller.transform; // set child
                         gameObject.transform.position = other.GetComponent<InteractSphere>().playercontroller.waypointInteract.transform.position; // set position
                         other.GetComponent<InteractSphere>().playercontroller.objectInHand = gameObject; // dans la main 
@@ -233,8 +233,8 @@ public class ModuleInteractible : MonoBehaviour
             gameObject.transform.position = other.GetComponent<ModuleInteractible>().waypointCuisine.transform.position;
             /*other.GetComponent<InteractSphere>().playercontroller.objectInHand.GetComponent<Rigidbody>()
                 .constraints = RigidbodyConstraints.None;*/
-            isOn = false;
             iscooking = true;
+            player.canWalk = false;
             
             StartCoroutine(cook(other.GetComponent<ModuleInteractible>()));
 
@@ -262,6 +262,7 @@ public class ModuleInteractible : MonoBehaviour
         player.isInteractingg = false;
 
         player.canRotatePlayer = true;
+        player.canWalk = true;
         iscooking = false;
         isCoocked = true;
         
@@ -289,14 +290,24 @@ public class ModuleInteractible : MonoBehaviour
     }
     void ChromodiumSelf(PlayerController other)
     {
-        //StartCoroutine(chromodiumSelf(other));
+        StartCoroutine(chromodiumSelf(other));
     }
     IEnumerator chromodiumSelf(PlayerController other)
     {
-        var keepValueSpeed = other.maxSpeed;
-        other.maxSpeed *= speedMultiplierBonus;
-        yield return new WaitForSeconds(effectDuration);
-        other.maxSpeed = keepValueSpeed;
+        if (isCoocked)
+        {
+            var keepValueSpeed = other.maxSpeed;
+            other.maxSpeed *= speedMultiplierBonus;
+            yield return new WaitForSeconds(effectDuration*1.5f);
+            other.maxSpeed = keepValueSpeed;
+        }
+        else
+        {
+            var keepValueSpeed = other.maxSpeed;
+            other.maxSpeed *= speedMultiplierBonus;
+            yield return new WaitForSeconds(effectDuration);
+            other.maxSpeed = keepValueSpeed;
+        }
     }
     
     void CrokaiumSelf(PlayerController other)
@@ -305,26 +316,48 @@ public class ModuleInteractible : MonoBehaviour
     }
     IEnumerator crokaiumSelf(PlayerController other)
     {
-        var keepValueSpeed = other.maxSpeed;
-        other.maxSpeed *= speedMultiplierBonus;
-        yield return new WaitForSeconds(effectDuration);
-        other.maxSpeed = keepValueSpeed;
+        if (isCoocked)
+        {
+            var keepValueSpeed = other.maxSpeed;
+            other.maxSpeed *= speedMultiplierBonus;
+            yield return new WaitForSeconds(effectDuration*1.5f);
+            other.maxSpeed = keepValueSpeed;
+        }
+        else
+        {
+            var keepValueSpeed = other.maxSpeed;
+            other.maxSpeed *= speedMultiplierBonus;
+            yield return new WaitForSeconds(effectDuration);
+            other.maxSpeed = keepValueSpeed;
+        }
     }
     
     void PepinriumSelf(PlayerController other)
     {
-        Debug.Log("sd");
         StartCoroutine(pepinriumSelf(other));
     }
     IEnumerator pepinriumSelf(PlayerController other)
     {
-        other.canMoveModule = canMoveModule;
-        var keepValueSpeed = other.movingModuleSpeed;
-        other.movingModuleSpeed = modifiedMovingModuleSpeedBonus;
-        Debug.Log(movingModuleSpeed);
-        yield return new WaitForSeconds(effectDuration);
-        other.canMoveModule = false;
-        other.movingModuleSpeed = keepValueSpeed;
+        if (isCoocked)
+        {
+            other.canMoveModule = canMoveModule;
+            var keepValueSpeed = other.movingModuleSpeed;
+            other.movingModuleSpeed = modifiedMovingModuleSpeedBonus;
+            Debug.Log(movingModuleSpeed);
+            yield return new WaitForSeconds(effectDuration*1.5f);
+            other.canMoveModule = false;
+            other.movingModuleSpeed = keepValueSpeed;
+        }
+        else
+        {
+            other.canMoveModule = canMoveModule;
+            var keepValueSpeed = other.movingModuleSpeed;
+            other.movingModuleSpeed = modifiedMovingModuleSpeedBonus;
+            Debug.Log(movingModuleSpeed);
+            yield return new WaitForSeconds(effectDuration);
+            other.canMoveModule = false;
+            other.movingModuleSpeed = keepValueSpeed;
+        }
     }
     
     
@@ -369,10 +402,21 @@ public class ModuleInteractible : MonoBehaviour
     
     IEnumerator crokaiumTo(PlayerController other)
     {
-        var keepValueSpeed = other.maxSpeed;
-        other.maxSpeed *= speedMultiplierMalus;
-        yield return new WaitForSeconds(effectDuration);
-        other.maxSpeed = keepValueSpeed;
+        if (isCoocked)
+        {
+            var keepValueSpeed = other.maxSpeed;
+            other.maxSpeed *= speedMultiplierMalus;
+            yield return new WaitForSeconds(effectDuration*1.5f);
+            other.maxSpeed = keepValueSpeed;
+        }
+        else
+        {
+            var keepValueSpeed = other.maxSpeed;
+            other.maxSpeed *= speedMultiplierMalus;
+            yield return new WaitForSeconds(effectDuration);
+            other.maxSpeed = keepValueSpeed;
+        }
+        
     }
     
     void PepinriumTo(PlayerController other)
@@ -382,13 +426,27 @@ public class ModuleInteractible : MonoBehaviour
 
     IEnumerator pepinriumTo(PlayerController other)
     {
-        other.canMoveModule = canMoveModule;
-        var keepValueSpeed = other.movingModuleSpeed;
-        other.movingModuleSpeed = modifiedMovingModuleSpeedMalus;
-        Debug.Log(movingModuleSpeed);
-        yield return new WaitForSeconds(effectDuration);
-        other.canMoveModule = false;
-        other.movingModuleSpeed = keepValueSpeed;
+        if (isCoocked)
+        {
+            other.canMoveModule = canMoveModule;
+            var keepValueSpeed = other.movingModuleSpeed;
+            other.movingModuleSpeed = modifiedMovingModuleSpeedMalus;
+            Debug.Log(movingModuleSpeed);
+            yield return new WaitForSeconds(effectDuration*1.5f);
+            other.canMoveModule = false;
+            other.movingModuleSpeed = keepValueSpeed;
+        }
+        else
+        {
+            other.canMoveModule = canMoveModule;
+            var keepValueSpeed = other.movingModuleSpeed;
+            other.movingModuleSpeed = modifiedMovingModuleSpeedMalus;
+            Debug.Log(movingModuleSpeed);
+            yield return new WaitForSeconds(effectDuration);
+            other.canMoveModule = false;
+            other.movingModuleSpeed = keepValueSpeed;
+        }
+        
     }
     
     void TremiumTo(PlayerController other)
@@ -398,10 +456,20 @@ public class ModuleInteractible : MonoBehaviour
     
     IEnumerator tremiumTo(PlayerController other)
     {
-        var keepValueSpeed = timeToCook;
-        timeToCook = modifiedTimeToCook;
-        yield return new WaitForSeconds(effectDuration);
-        timeToCook = keepValueSpeed;
+        if (isCoocked)
+        {
+            var keepValueSpeed = timeToCook;
+            timeToCook = modifiedTimeToCook;
+            yield return new WaitForSeconds(effectDuration*1.5f);
+            timeToCook = keepValueSpeed;
+        }
+        else
+        {
+            var keepValueSpeed = timeToCook;
+            timeToCook = modifiedTimeToCook;
+            yield return new WaitForSeconds(effectDuration);
+            timeToCook = keepValueSpeed;
+        }
     }
     
 

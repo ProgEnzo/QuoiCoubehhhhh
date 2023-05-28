@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 playerVelocity;
     private bool groundedPlayer;
 
+    public bool canWalk = true;
     public bool isWalking;
     
     [SerializeField]
@@ -241,7 +242,11 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        Movement();
+        if (canWalk)
+        {
+            Movement();
+        }
+        
         LoockingForTarget();
     }
 
