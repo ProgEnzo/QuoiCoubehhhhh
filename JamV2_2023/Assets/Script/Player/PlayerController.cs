@@ -64,6 +64,8 @@ public class PlayerController : MonoBehaviour
     public bool canMoveModule;
     public float movingModuleSpeed;
     public bool isHolding;
+    public int effect;
+    public bool istouched;
     
     private Target LockedTarget
     {
@@ -88,6 +90,7 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
+        effect = 0;
         controller = gameObject.GetComponent<CharacterController>();
         isDashingReload = true;
         isNeedingSnowBall = true;

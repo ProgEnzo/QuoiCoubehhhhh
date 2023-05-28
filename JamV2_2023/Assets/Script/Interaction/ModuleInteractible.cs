@@ -210,6 +210,7 @@ public class ModuleInteractible : MonoBehaviour
                         }
                         GetComponent<MeshRenderer>().enabled = false;
                         isOn = false;
+                        
                     }
 
                     if (other.GetComponent<InteractSphere>().playercontroller.isInteractingg && !iscooking)
@@ -291,15 +292,19 @@ public class ModuleInteractible : MonoBehaviour
         {
             case "Chromodium":
                 ChromodiumSelf(other);
+                
                 break;
             case "Crokaium":
                 CrokaiumSelf(other);
+                
                 break;
             case "Prepinrium":
                 PepinriumSelf(other);
+                
                 break;
             case "Tremium":
                 TremiumSelf(other);
+                
                 break;
         }
     }
@@ -309,6 +314,7 @@ public class ModuleInteractible : MonoBehaviour
     }
     IEnumerator chromodiumSelf(PlayerController other)
     {
+        other.istouched = true;
         if (isCoocked)
         {
             var keepValueSpeed = other.maxSpeed;
@@ -323,6 +329,7 @@ public class ModuleInteractible : MonoBehaviour
             yield return new WaitForSeconds(effectDuration);
             other.maxSpeed = keepValueSpeed;
         }
+        other.istouched = false;
     }
     
     void CrokaiumSelf(PlayerController other)
@@ -331,6 +338,7 @@ public class ModuleInteractible : MonoBehaviour
     }
     IEnumerator crokaiumSelf(PlayerController other)
     {
+        other.istouched = true;
         if (isCoocked)
         {
             var keepValueSpeed = other.maxSpeed;
@@ -345,6 +353,7 @@ public class ModuleInteractible : MonoBehaviour
             yield return new WaitForSeconds(effectDuration);
             other.maxSpeed = keepValueSpeed;
         }
+        other.istouched = false;
     }
     
     void PepinriumSelf(PlayerController other)
@@ -353,6 +362,7 @@ public class ModuleInteractible : MonoBehaviour
     }
     IEnumerator pepinriumSelf(PlayerController other)
     {
+        other.istouched = true;
         if (isCoocked)
         {
             other.canMoveModule = canMoveModule;
@@ -373,6 +383,7 @@ public class ModuleInteractible : MonoBehaviour
             other.canMoveModule = false;
             other.movingModuleSpeed = keepValueSpeed;
         }
+        other.istouched = false;
     }
     
     
@@ -416,6 +427,7 @@ public class ModuleInteractible : MonoBehaviour
     
     IEnumerator crokaiumTo(PlayerController other)
     {
+        other.istouched = true;
         if (isCoocked)
         {
             var keepValueSpeed = other.maxSpeed;
@@ -430,6 +442,7 @@ public class ModuleInteractible : MonoBehaviour
             yield return new WaitForSeconds(effectDuration);
             other.maxSpeed = keepValueSpeed;
         }
+        other.istouched = false;
         
     }
     
@@ -440,6 +453,7 @@ public class ModuleInteractible : MonoBehaviour
 
     IEnumerator pepinriumTo(PlayerController other)
     {
+        other.istouched = true;
         if (isCoocked)
         {
             other.canMoveModule = canMoveModule;
@@ -460,7 +474,9 @@ public class ModuleInteractible : MonoBehaviour
             other.canMoveModule = false;
             other.movingModuleSpeed = keepValueSpeed;
         }
-        
+
+        other.istouched = false;
+
     }
     
     void TremiumTo(PlayerController other)
@@ -470,6 +486,7 @@ public class ModuleInteractible : MonoBehaviour
     
     IEnumerator tremiumTo(PlayerController other)
     {
+        other.istouched = true;
         if (isCoocked)
         {
             var keepValueSpeed = timeToCook;
@@ -484,6 +501,7 @@ public class ModuleInteractible : MonoBehaviour
             yield return new WaitForSeconds(effectDuration);
             timeToCook = keepValueSpeed;
         }
+        other.istouched = false;
     }
     
 

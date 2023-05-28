@@ -56,6 +56,14 @@ public class PlayerAnimator : MonoBehaviour
         {
             animator.SetBool("Cuisine", false);
         }
+        if (playerController.istouched)
+        {
+            animator.SetBool("grabRobot", true);
+        }
+        else
+        {
+            animator.SetBool("grabRobot", false);
+        }
 
     }
 }
