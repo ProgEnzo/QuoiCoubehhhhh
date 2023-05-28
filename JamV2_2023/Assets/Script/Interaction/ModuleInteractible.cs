@@ -179,7 +179,6 @@ public class ModuleInteractible : MonoBehaviour
                         other.GetComponent<InteractSphere>().playercontroller.objectInHand.GetComponent<Rigidbody>()
                             .constraints = RigidbodyConstraints.FreezeAll;
                         other.GetComponent<InteractSphere>().playercontroller.isInteractingg = false;
-                        
                         isOn = true;
                     }
                 }

@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using NaughtyAttributes;
 using Objects.Target;
+using UnityEditor.SceneManagement;
 using UnityEngine.SceneManagement;
 
 
@@ -42,6 +43,7 @@ public class PlayerController : MonoBehaviour
 
     public GameObject objectInHand;
     public Rigidbody objectInHandRB;
+    
     public float shootForce = 10;
     
     [Tooltip("Porté pour detecter les cibles possbiles"), SerializeField] private float targetDectionRange;
@@ -58,9 +60,11 @@ public class PlayerController : MonoBehaviour
     public CapsuleCollider playerInteract;
 
     [Space]
+    private bool module;
     public bool canMoveModule;
     public float movingModuleSpeed;
     public bool isHolding;
+    
     private Target LockedTarget
     {
         get => lockedTarget;
@@ -127,6 +131,8 @@ public class PlayerController : MonoBehaviour
         {
             //isInteracting.GetComponent<InteractSphere>().StartCoroutine(isInteracting.GetComponent<InteractSphere>().start());
             isEat = true;
+            objectInHand = null;
+            isHolding = false;
         }
         else
         {
@@ -162,7 +168,6 @@ public class PlayerController : MonoBehaviour
     private void LoockingForTarget()
     {
         if (!objectInHand) return;
-         
         Vector3 playerPos = transform.position;
         Vector3 forward = transform.forward;
          
@@ -252,6 +257,15 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        if (objectInHand && objectInHand.GetComponent<ModuleInteractible>().isOn)
+        {
+            isHolding = true;
+        }
+        else
+        {
+            isHolding = false;
+        }
+        
         if (life <= 0)
         {
             SceneManager.LoadScene(0);

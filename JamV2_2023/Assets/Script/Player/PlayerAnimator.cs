@@ -39,7 +39,7 @@ public class PlayerAnimator : MonoBehaviour
             animator.SetBool("walk", false);
         }
         
-        if (playerController.isInteractingg | playerController.objectInHand)
+        if (playerController.isInteractingg | playerController.isHolding && !playerController.isCuisine)
         {
             animator.SetBool("grab", true);
         }

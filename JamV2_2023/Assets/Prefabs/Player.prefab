@@ -662,6 +662,7 @@ MonoBehaviour:
   playerInteract: {fileID: 7698925387107455723}
   canMoveModule: 0
   movingModuleSpeed: 0
+  isHolding: 0
   targets: []
   isNeedingSnowBall: 0
   isEat: 0
@@ -1009,6 +1010,11 @@ PrefabInstance:
         type: 3}
       propertyPath: playOnAwake
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609526594506870800, guid: 68cf6e02a0c0cfc4a94e1ca2f11af98a,
+        type: 3}
+      propertyPath: moveWithTransform
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5628480947937990007, guid: 68cf6e02a0c0cfc4a94e1ca2f11af98a,
         type: 3}
