@@ -873,7 +873,7 @@ Transform:
   - {fileID: 1914738272638295514}
   - {fileID: 875296817872282360}
   m_Father: {fileID: 0}
-  m_RootOrder: 89
+  m_RootOrder: 68
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7295444396816108835
 GameObject:
@@ -1195,6 +1195,94 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 57349e936a20d58408ffed14a912bb49, type: 3}
+--- !u!1 &535503385369966658 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3741344602842561580, guid: 57349e936a20d58408ffed14a912bb49,
+    type: 3}
+  m_PrefabInstance: {fileID: 3784589829203788910}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &4278760262466704662
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535503385369966658}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &222717569317569615
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535503385369966658}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.78803253, y: 0.11719462, z: 0.7722111}
+  m_Center: {x: -0.022769928, y: 0.08215009, z: 0.0013275146}
+--- !u!65 &5813993187354409275
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535503385369966658}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7853918, y: 0.11632925, z: 0.79598284}
+  m_Center: {x: -0.021053791, y: 0.08239654, z: 0.010941744}
+--- !u!114 &5405412608490694152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535503385369966658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcd990e1e616cee49b53a3e489a4ca51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moduleInteractibleSO: {fileID: 11400000, guid: 993e0692112dce74a8bb41807854ce07,
+    type: 2}
+  box1: {fileID: 222717569317569615}
+  box2: {fileID: 5813993187354409275}
+  waypointCuisine: {fileID: 0}
+  movingModuleSpeed: 5
+  occupied: 0
+  moduleName: 
+  mesh: {fileID: 0}
+  moduleMovingSpeed: 0
+  timeToCook: 0
+  Cuisine: 0
+  ElementVerticalMouvemet: []
+  effectDuration: 0
+  forceMultiplier: 0
+  speedMultiplierBonus: 0
+  speedMultiplierMalus: 0
+  canMoveModule: 0
+  modifiedMovingModuleSpeedBonus: 0
+  modifiedMovingModuleSpeedMalus: 0
+  modifiedTimeToCook: 0
+  canCookImmediately: 0
+  parent: {fileID: 0}
+  isOn: 0
+  thrown: 0
+  player: {fileID: 0}
+  isCoocked: 0
+  iscooking: 0
 --- !u!4 &875296817872282360 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4080329108258629270, guid: 57349e936a20d58408ffed14a912bb49,
