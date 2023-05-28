@@ -1512,7 +1512,7 @@ PrefabInstance:
     - target: {fileID: 4846235148105489385, guid: 5f19daf7bdc9c0743b64b488aae0bdfe,
         type: 3}
       propertyPath: m_Name
-      value: Caisse (1)
+      value: Cuisine
       objectReference: {fileID: 0}
     - target: {fileID: 4846235148105489385, guid: 5f19daf7bdc9c0743b64b488aae0bdfe,
         type: 3}

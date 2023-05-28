@@ -164,8 +164,9 @@ public class ModuleInteractible : MonoBehaviour
             {
                 if (!isOn)
                 {
-                    if (other.GetComponent<InteractSphere>().playercontroller.isInteractingg) // prend alliment
+                    if (other.GetComponent<InteractSphere>().playercontroller.isInteractingg && !iscooking) // prend alliment
                     {
+                        player = other.GetComponent<InteractSphere>().playercontroller;
                         gameObject.transform.parent = other.GetComponent<InteractSphere>().playercontroller.transform; // set child
                         gameObject.transform.position = other.GetComponent<InteractSphere>().playercontroller.waypointInteract.transform.position; // set position
                         other.GetComponent<InteractSphere>().playercontroller.objectInHand = gameObject; // dans la main 
@@ -175,9 +176,9 @@ public class ModuleInteractible : MonoBehaviour
                         isOn = true;
                     }
                 }
-                else
+                else 
                 {
-                    if (other.GetComponent<InteractSphere>().playercontroller.isThrow) // lance alliment
+                    if (other.GetComponent<InteractSphere>().playercontroller.isThrow && !iscooking) // lance alliment
                     {
                         gameObject.transform.parent = null;
                         other.GetComponent<InteractSphere>().playercontroller.objectInHand.GetComponent<Rigidbody>()
@@ -189,7 +190,7 @@ public class ModuleInteractible : MonoBehaviour
                         thrown = true;
                     }
                     
-                    if (other.GetComponent<InteractSphere>().playercontroller.isEat) // mange aliment
+                    if (other.GetComponent<InteractSphere>().playercontroller.isEat && !iscooking) // mange aliment
                     {
                         gameObject.transform.parent = null;
                         PowerSelf(other.GetComponent<InteractSphere>().playercontroller);
@@ -200,13 +201,15 @@ public class ModuleInteractible : MonoBehaviour
                         isOn = false;
                     }
 
-                    /*if (other.GetComponent<InteractSphere>().playercontroller.isInteractingg)
+                    if (other.GetComponent<InteractSphere>().playercontroller.isInteractingg && !iscooking)
                     {
+                        Debug.Log("qsd");
                         gameObject.transform.parent = null;
                         other.GetComponent<InteractSphere>().playercontroller.objectInHand.GetComponent<Rigidbody>()
                             .constraints = RigidbodyConstraints.None;
                         isOn = false;
-                    }*/
+                        Debug.Log("qsdqzd");
+                    }
                 }
             }
         }
@@ -228,6 +231,7 @@ public class ModuleInteractible : MonoBehaviour
             /*other.GetComponent<InteractSphere>().playercontroller.objectInHand.GetComponent<Rigidbody>()
                 .constraints = RigidbodyConstraints.None;*/
             isOn = false;
+            iscooking = true;
             
             StartCoroutine(cook());
 
@@ -238,10 +242,24 @@ public class ModuleInteractible : MonoBehaviour
         }
     }
 
+    public PlayerController player;
+    public bool isCoocked;
+    public bool iscooking;
     IEnumerator cook()
     {
+        player.canRotatePlayer = false;
         yield return new WaitForSeconds(3);
-        gameObject.transform.position = Vector3.zero;
+        gameObject.transform.parent = player.transform;
+        gameObject.transform.position = player.waypointInteract.transform.position;
+        player.objectInHand = gameObject; // dans la main 
+        player.objectInHand.GetComponent<Rigidbody>()
+            .constraints = RigidbodyConstraints.FreezeAll;
+        player.isInteractingg = false;
+        
+        
+        player.canRotatePlayer = true;
+        iscooking = false;
+        isCoocked = true;
     }
 
 
