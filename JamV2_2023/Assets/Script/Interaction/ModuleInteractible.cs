@@ -242,6 +242,7 @@ public class ModuleInteractible : MonoBehaviour
                 .constraints = RigidbodyConstraints.None;*/
             iscooking = true;
             player.canWalk = false;
+            player.isCuisine = true;
             
             StartCoroutine(cook(other.GetComponent<ModuleInteractible>()));
 
@@ -272,6 +273,8 @@ public class ModuleInteractible : MonoBehaviour
         player.canWalk = true;
         iscooking = false;
         isCoocked = true;
+        
+        player.isCuisine = false;
         
         other.occupied = false;
     }

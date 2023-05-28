@@ -251,7 +251,7 @@ public class PlayerController : MonoBehaviour
     }
 
     public bool canRotatePlayer = true;
-
+    public bool isCuisine = false;
     void Movement()
     {
         groundedPlayer = controller.isGrounded;
