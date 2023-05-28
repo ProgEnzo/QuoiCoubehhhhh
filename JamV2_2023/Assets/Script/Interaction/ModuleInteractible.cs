@@ -40,8 +40,11 @@ public class ModuleInteractible : MonoBehaviour
     public float modifiedMovingModuleSpeedMalus;
 
     public float modifiedTimeToCook;
-    public bool canCookImmediately; 
-    
+    public bool canCookImmediately;
+
+
+
+    public MeshRenderer[] meshRenderers;
     void Start()
     {
         SecureSO();
@@ -59,7 +62,7 @@ public class ModuleInteractible : MonoBehaviour
             {
                 i.SetActive(false);
             }*/
-            
+            meshRenderers = gameObject.GetComponentsInChildren<MeshRenderer>();
         }
         GetComponent<BoxCollider>().isTrigger = true;
     }
@@ -199,6 +202,10 @@ public class ModuleInteractible : MonoBehaviour
                         //Destroy(gameObject);
                         box1.enabled = false;
                         box2.enabled = false;
+                        foreach (var x in meshRenderers)
+                        {
+                            x.enabled = false;
+                        }
                         GetComponent<MeshRenderer>().enabled = false;
                         isOn = false;
                     }
