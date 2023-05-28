@@ -75,7 +75,7 @@ public class ModuleInteractible : MonoBehaviour
         timeToCook = moduleInteractibleSO.timeToCook;
         Cuisine = moduleInteractibleSO.verticalMovement;
 
-        var selection = Selection.gameObjects;
+        /*var selection = Selection.gameObjects;
 
         for (var i = selection.Length; i < 0; i++)
         {
@@ -89,7 +89,7 @@ public class ModuleInteractible : MonoBehaviour
             newObject.transform.localRotation = selected.transform.localRotation;
             newObject.transform.SetSiblingIndex(selected.transform.GetSiblingIndex());
             Undo.DestroyObjectImmediate(selected);
-        }
+        }*/
 
         effectDuration = moduleInteractibleSO.effectDuration;
         forceMultiplier = moduleInteractibleSO.forceMultiplier;
