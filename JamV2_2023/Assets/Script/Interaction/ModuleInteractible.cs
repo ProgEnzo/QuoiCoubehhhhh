@@ -16,8 +16,7 @@ public class ModuleInteractible : MonoBehaviour
     public float movingModuleSpeed = 5;
 
     public bool occupied;
-    
-    
+
     [Space]
     [Space]
     [SerializeField]private string moduleName;
@@ -229,7 +228,7 @@ public class ModuleInteractible : MonoBehaviour
             /*other.GetComponent<InteractSphere>().playercontroller.objectInHand.GetComponent<Rigidbody>()
                 .constraints = RigidbodyConstraints.None;*/
             isOn = false;
-
+            
             StartCoroutine(cook());
 
             /* if (GetComponent<ModuleInteractible>().GetComponent<InteractSphere>().playercontroller.isInteractingg) // pose aliment et cuisinent 
