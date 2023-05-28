@@ -956,7 +956,7 @@ Transform:
   - {fileID: 1401218829354048197}
   - {fileID: 6863391571220233857}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 59
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7844713438400563772
 GameObject:
@@ -1132,11 +1132,6 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 7104525534216359826}
     m_Modifications:
-    - target: {fileID: 2051180466644012256, guid: 1880fe432ef86a14ebf62f0564db527b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2572967000665597953, guid: 1880fe432ef86a14ebf62f0564db527b,
         type: 3}
       propertyPath: m_Name
@@ -1196,11 +1191,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6538118387775401891, guid: 1880fe432ef86a14ebf62f0564db527b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -1277,6 +1267,22 @@ MonoBehaviour:
   player: {fileID: 0}
   isCoocked: 0
   iscooking: 0
+--- !u!54 &1749732129
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6085624140688892987}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!4 &6863391571220233857 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2954030910565642939, guid: 1880fe432ef86a14ebf62f0564db527b,
