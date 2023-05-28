@@ -148,6 +148,7 @@ public class ModuleInteractible : MonoBehaviour
                         other.GetComponent<InteractSphere>().playercontroller.isInteractingg = false;
                         isOn = true;
                         other.GetComponent<InteractSphere>().playercontroller.canRotatePlayer = false;
+                        
                     }
                 }
                 else
@@ -178,6 +179,7 @@ public class ModuleInteractible : MonoBehaviour
                         other.GetComponent<InteractSphere>().playercontroller.objectInHand.GetComponent<Rigidbody>()
                             .constraints = RigidbodyConstraints.FreezeAll;
                         other.GetComponent<InteractSphere>().playercontroller.isInteractingg = false;
+                        
                         isOn = true;
                     }
                 }
@@ -205,6 +207,7 @@ public class ModuleInteractible : MonoBehaviour
                         foreach (var x in meshRenderers)
                         {
                             x.enabled = false;
+                            vfxcooked.Stop();
                         }
                         GetComponent<MeshRenderer>().enabled = false;
                         isOn = false;

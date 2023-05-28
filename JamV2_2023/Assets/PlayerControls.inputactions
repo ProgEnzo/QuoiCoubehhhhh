@@ -120,7 +120,7 @@
                     "name": "",
                     "id": "aac10e5f-c4ca-430b-9a6d-b2a2a15d3665",
                     "path": "<Gamepad>/buttonWest",
-                    "interactions": "Tap(duration=0.05,pressPoint=0.05)",
+                    "interactions": "Tap(duration=0.05,pressPoint=1)",
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "Interact",

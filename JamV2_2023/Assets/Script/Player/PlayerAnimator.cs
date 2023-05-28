@@ -39,7 +39,7 @@ public class PlayerAnimator : MonoBehaviour
             animator.SetBool("walk", false);
         }
         
-        if (playerController.isInteractingg)
+        if (playerController.isInteractingg | playerController.objectInHand)
         {
             animator.SetBool("grab", true);
         }

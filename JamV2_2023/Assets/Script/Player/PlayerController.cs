@@ -54,13 +54,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private ParticleSystem vfxweak;
     [SerializeField] public ParticleSystem vfxslow;
     [SerializeField] private ParticleSystem vfxupdash;
-    
+
     public CapsuleCollider playerInteract;
 
     [Space]
     public bool canMoveModule;
     public float movingModuleSpeed;
-    
+    public bool isHolding;
     private Target LockedTarget
     {
         get => lockedTarget;
@@ -264,7 +264,7 @@ public class PlayerController : MonoBehaviour
         {
             Movement();
         }
-        
+
         LoockingForTarget();
     }
 
