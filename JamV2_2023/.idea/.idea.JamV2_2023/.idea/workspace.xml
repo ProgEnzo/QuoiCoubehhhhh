@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b650fd27-a58a-47fb-81f8-e25658626dc5" name="Changes" comment="" />
+    <list default="true" id="b650fd27-a58a-47fb-81f8-e25658626dc5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LDEnzo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LDEnzo.unity" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/../../AventurePuzzle/SnowTest/Assets/Scripts/Objects/Target/Target.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../AventurePuzzle/SnowTest/Assets/Scripts/Player/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../Caverne-Merveilleuse/CarverneMerveilleuse/Assets/Script/PlayerCharacter/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Camera/CameraManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Interaction/ModuleInteractible.cs" root0="FORCE_HIGHLIGHTING" />
