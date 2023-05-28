@@ -874,7 +874,7 @@ Transform:
   - {fileID: 1914738272638295514}
   - {fileID: 875296817872282360}
   m_Father: {fileID: 0}
-  m_RootOrder: 80
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &4678587966517607659
 BoxCollider:
@@ -1321,6 +1321,9 @@ MonoBehaviour:
   modifiedMovingModuleSpeedMalus: 0
   modifiedTimeToCook: 0
   canCookImmediately: 0
+  vfxcooked: {fileID: 2316308241848804111}
+  vfxhit: {fileID: 9186864083160367793}
+  meshRenderers: []
   parent: {fileID: 0}
   isOn: 0
   thrown: 0
@@ -1330,6 +1333,18 @@ MonoBehaviour:
 --- !u!4 &875296817872282360 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4080329108258629270, guid: 57349e936a20d58408ffed14a912bb49,
+    type: 3}
+  m_PrefabInstance: {fileID: 3784589829203788910}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &2316308241848804111 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1486397296408700769, guid: 57349e936a20d58408ffed14a912bb49,
+    type: 3}
+  m_PrefabInstance: {fileID: 3784589829203788910}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &9186864083160367793 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5475212009273165535, guid: 57349e936a20d58408ffed14a912bb49,
     type: 3}
   m_PrefabInstance: {fileID: 3784589829203788910}
   m_PrefabAsset: {fileID: 0}

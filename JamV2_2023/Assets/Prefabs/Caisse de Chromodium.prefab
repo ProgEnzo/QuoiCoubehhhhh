@@ -957,7 +957,7 @@ Transform:
   - {fileID: 1401218829354048197}
   - {fileID: 6863391571220233857}
   m_Father: {fileID: 0}
-  m_RootOrder: 59
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &7920530343438042078
 BoxCollider:
@@ -1209,6 +1209,12 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 1880fe432ef86a14ebf62f0564db527b, type: 3}
+--- !u!198 &4433499977702183570 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5352402323606871720, guid: 1880fe432ef86a14ebf62f0564db527b,
+    type: 3}
+  m_PrefabInstance: {fileID: 8629311622767447098}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &6085624140688892987 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2572967000665597953, guid: 1880fe432ef86a14ebf62f0564db527b,
@@ -1291,6 +1297,9 @@ MonoBehaviour:
   modifiedMovingModuleSpeedMalus: 0
   modifiedTimeToCook: 0
   canCookImmediately: 0
+  vfxcooked: {fileID: 8469297909319608177}
+  vfxhit: {fileID: 4433499977702183570}
+  meshRenderers: []
   parent: {fileID: 0}
   isOn: 0
   thrown: 0
@@ -1300,6 +1309,12 @@ MonoBehaviour:
 --- !u!4 &6863391571220233857 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2954030910565642939, guid: 1880fe432ef86a14ebf62f0564db527b,
+    type: 3}
+  m_PrefabInstance: {fileID: 8629311622767447098}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &8469297909319608177 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 164808688110938955, guid: 1880fe432ef86a14ebf62f0564db527b,
     type: 3}
   m_PrefabInstance: {fileID: 8629311622767447098}
   m_PrefabAsset: {fileID: 0}
