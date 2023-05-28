@@ -228,7 +228,7 @@ public class ModuleInteractible : MonoBehaviour
         {
             PowerTo(other.GetComponent<InteractSphere>().playercontroller);
             other.GetComponent<InteractSphere>().playercontroller.life--;
-            
+            player.vfxslow.Play();
             thrown = false;
         }
 
@@ -409,7 +409,6 @@ public class ModuleInteractible : MonoBehaviour
     void CrokaiumTo(PlayerController other)
     {
         StartCoroutine(crokaiumTo(other));
-        other.vfxslow.Play();
     }
     
     IEnumerator crokaiumTo(PlayerController other)
