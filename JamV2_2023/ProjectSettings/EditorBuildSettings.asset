@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LDEnzo.unity
     guid: 3f3b1e901b2b3c44f8217408be57eb30
+  - enabled: 0
+    path: Assets/Scenes/ProgAlois.unity
+    guid: 1193a18d5bb6c9e439804051d7f6a324
   m_configObjects: {}

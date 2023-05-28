@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   moduleName: Prepinrium
-  mesh: {fileID: 0}
+  mesh: {fileID: 6931934493516698167, guid: 80bb4b2e87eefe64b873a55e20369961, type: 3}
   moduleMovingSpeed: 0
   timeToCook: 3.5
   verticalMovement: 0
