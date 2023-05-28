@@ -11,8 +11,11 @@ public class ModuleInteractible : MonoBehaviour
     public BoxCollider box1;
     public BoxCollider box2;
 
+    public GameObject waypointCuisine;
+
     public float movingModuleSpeed = 5;
-    
+
+    public bool occupied;
     
     
     [Space]
@@ -121,7 +124,7 @@ public class ModuleInteractible : MonoBehaviour
             {
                 if (!isOn)
                 {
-                    if (other.GetComponent<InteractSphere>().playercontroller.isInteractingg) // déplace la cuisine
+                    if (other.GetComponent<InteractSphere>().playercontroller.isInteractingg && other.GetComponent<InteractSphere>().playercontroller.objectInHand == null) // déplace la cuisine
                     {
                         if (!other.GetComponent<InteractSphere>().playercontroller.canMoveModule)
                         {
@@ -198,14 +201,13 @@ public class ModuleInteractible : MonoBehaviour
                         isOn = false;
                     }
 
-                    if (other.GetComponent<InteractSphere>().playercontroller.isInteractingg) // pose aliment et cuisinent 
+                    /*if (other.GetComponent<InteractSphere>().playercontroller.isInteractingg)
                     {
-                        other.GetComponent<InteractSphere>().playercontroller.isInteractingg = false;
                         gameObject.transform.parent = null;
                         other.GetComponent<InteractSphere>().playercontroller.objectInHand.GetComponent<Rigidbody>()
                             .constraints = RigidbodyConstraints.None;
                         isOn = false;
-                    }
+                    }*/
                 }
             }
         }
@@ -215,6 +217,32 @@ public class ModuleInteractible : MonoBehaviour
             PowerTo(other.GetComponent<InteractSphere>().playercontroller);
             thrown = false;
         }
+
+        if (other.CompareTag("Cuisine") && !other.GetComponent<ModuleInteractible>().occupied)
+        {
+            other.GetComponent<ModuleInteractible>().occupied = true;
+            Debug.Log("cuisin");
+            
+            Debug.Log("interagie en cuisine");
+            gameObject.transform.parent = null;
+            gameObject.transform.position = other.GetComponent<ModuleInteractible>().waypointCuisine.transform.position;
+            /*other.GetComponent<InteractSphere>().playercontroller.objectInHand.GetComponent<Rigidbody>()
+                .constraints = RigidbodyConstraints.None;*/
+            isOn = false;
+
+            StartCoroutine(cook());
+
+            /* if (GetComponent<ModuleInteractible>().GetComponent<InteractSphere>().playercontroller.isInteractingg) // pose aliment et cuisinent 
+             {
+                 
+             }*/
+        }
+    }
+
+    IEnumerator cook()
+    {
+        yield return new WaitForSeconds(3);
+        gameObject.transform.position = Vector3.zero;
     }
 
 

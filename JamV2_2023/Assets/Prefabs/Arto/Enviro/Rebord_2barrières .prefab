@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4590212968832757329}
+  - component: {fileID: 7782449938839627292}
   m_Layer: 0
   m_Name: "Rebord_2barri\xE8res "
   m_TagString: Untagged
@@ -32,8 +33,21 @@ Transform:
   - {fileID: 8497258217555282218}
   - {fileID: 2667072428558382080}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &7782449938839627292
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863485316091274686}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.23190665, y: 2.8457458, z: 1}
+  m_Center: {x: -0.0524179, y: 0.9228729, z: -0.0000000062487002}
 --- !u!1001 &2012434004184842899
 PrefabInstance:
   m_ObjectHideFlags: 0

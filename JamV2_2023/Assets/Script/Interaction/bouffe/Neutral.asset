@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a00581cce2d06d444b25f41a4115e225, type: 3}
-  m_Name: "gazini\xE8res"
+  m_Name: Neutral
   m_EditorClassIdentifier: 
   id: 0
-  moduleName: "gazini\xE8res "
+  moduleName: Neutral
   mesh: {fileID: 0}
-  moduleMovingSpeed: 2.5
-  timeToCook: 3
-  verticalMovement: 1
-  effectDuration: 0
+  moduleMovingSpeed: 2
+  timeToCook: 0
+  verticalMovement: 0
+  effectDuration: 3
   forceMultiplier: 0
   speedMultiplierBonus: 0
   speedMultiplierMalus: 0
-  canMoveModule: 0
+  canMoveModule: 1
   movingModuleSpeedBonus: 0
   movingModuleSpeedMalus: 0
   modifiedTimeToCook: 0
