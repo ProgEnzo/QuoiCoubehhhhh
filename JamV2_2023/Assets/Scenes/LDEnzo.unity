@@ -1497,72 +1497,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: ed277398923835c4299d67c2e65a4107, type: 3}
---- !u!1 &35001144 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6871336178810061029, guid: ed277398923835c4299d67c2e65a4107,
-    type: 3}
-  m_PrefabInstance: {fileID: 35001143}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &35001145
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 35001144}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcd990e1e616cee49b53a3e489a4ca51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moduleInteractibleSO: {fileID: 0}
-  box1: {fileID: 35001146}
-  box2: {fileID: 35001147}
-  movingModuleSpeed: 5
-  moduleName: 
-  mesh: {fileID: 0}
-  moduleMovingSpeed: 0
-  timeToCook: 0
-  Cuisine: 0
-  ElementVerticalMouvemet: []
-  effectDuration: 0
-  forceMultiplier: 0
-  speedMultiplierBonus: 0
-  speedMultiplierMalus: 0
-  canMoveModule: 0
-  modifiedMovingModuleSpeedBonus: 0
-  modifiedMovingModuleSpeedMalus: 0
-  modifiedTimeToCook: 0
-  canCookImmediately: 0
-  parent: {fileID: 0}
-  isOn: 0
-  thrown: 0
---- !u!65 &35001146
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 35001144}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
---- !u!65 &35001147
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 35001144}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
 --- !u!1001 &35106151
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2788,79 +2722,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 59442825}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &59658354 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2572967000665597953, guid: 1880fe432ef86a14ebf62f0564db527b,
-    type: 3}
-  m_PrefabInstance: {fileID: 2098991625}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &59658355 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2954030910565642939, guid: 1880fe432ef86a14ebf62f0564db527b,
-    type: 3}
-  m_PrefabInstance: {fileID: 2098991625}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &59658356
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 59658354}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcd990e1e616cee49b53a3e489a4ca51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moduleInteractibleSO: {fileID: 11400000, guid: 2eddfabf6dcb76f4cbe930137d995faf,
-    type: 2}
-  box1: {fileID: 59658357}
-  box2: {fileID: 59658358}
-  movingModuleSpeed: 5
-  moduleName: 
-  mesh: {fileID: 2572967000665597953, guid: 1880fe432ef86a14ebf62f0564db527b, type: 3}
-  moduleMovingSpeed: 0
-  timeToCook: 0
-  Cuisine: 0
-  ElementVerticalMouvemet: []
-  effectDuration: 0
-  forceMultiplier: 0
-  speedMultiplierBonus: 0
-  speedMultiplierMalus: 0
-  canMoveModule: 0
-  modifiedMovingModuleSpeedBonus: 0
-  modifiedMovingModuleSpeedMalus: 0
-  modifiedTimeToCook: 0
-  canCookImmediately: 0
-  parent: {fileID: 0}
-  isOn: 0
-  thrown: 0
---- !u!65 &59658357
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 59658354}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.35689777, z: 1}
-  m_Center: {x: 0, y: 0.14884779, z: 0}
---- !u!65 &59658358
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 59658354}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.35689777, z: 1}
-  m_Center: {x: 0, y: 0.14884779, z: 0}
 --- !u!1001 &64653923
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6394,72 +6255,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: ed277398923835c4299d67c2e65a4107, type: 3}
---- !u!1 &133099954 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6871336178810061029, guid: ed277398923835c4299d67c2e65a4107,
-    type: 3}
-  m_PrefabInstance: {fileID: 133099953}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &133099955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 133099954}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcd990e1e616cee49b53a3e489a4ca51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moduleInteractibleSO: {fileID: 0}
-  box1: {fileID: 133099956}
-  box2: {fileID: 133099957}
-  movingModuleSpeed: 5
-  moduleName: 
-  mesh: {fileID: 0}
-  moduleMovingSpeed: 0
-  timeToCook: 0
-  Cuisine: 0
-  ElementVerticalMouvemet: []
-  effectDuration: 0
-  forceMultiplier: 0
-  speedMultiplierBonus: 0
-  speedMultiplierMalus: 0
-  canMoveModule: 0
-  modifiedMovingModuleSpeedBonus: 0
-  modifiedMovingModuleSpeedMalus: 0
-  modifiedTimeToCook: 0
-  canCookImmediately: 0
-  parent: {fileID: 0}
-  isOn: 0
-  thrown: 0
---- !u!65 &133099956
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 133099954}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
---- !u!65 &133099957
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 133099954}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
 --- !u!1001 &134718567
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8014,72 +7809,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 164165463}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &165444966 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6871336178810061029, guid: ed277398923835c4299d67c2e65a4107,
-    type: 3}
-  m_PrefabInstance: {fileID: 369697831}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &165444967
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 165444966}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcd990e1e616cee49b53a3e489a4ca51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moduleInteractibleSO: {fileID: 0}
-  box1: {fileID: 165444969}
-  box2: {fileID: 165444968}
-  movingModuleSpeed: 5
-  moduleName: 
-  mesh: {fileID: 0}
-  moduleMovingSpeed: 0
-  timeToCook: 0
-  Cuisine: 0
-  ElementVerticalMouvemet: []
-  effectDuration: 0
-  forceMultiplier: 0
-  speedMultiplierBonus: 0
-  speedMultiplierMalus: 0
-  canMoveModule: 0
-  modifiedMovingModuleSpeedBonus: 0
-  modifiedMovingModuleSpeedMalus: 0
-  modifiedTimeToCook: 0
-  canCookImmediately: 0
-  parent: {fileID: 0}
-  isOn: 0
-  thrown: 0
---- !u!65 &165444968
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 165444966}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
---- !u!65 &165444969
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 165444966}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
 --- !u!1001 &166336997
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12716,138 +12445,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: ed277398923835c4299d67c2e65a4107, type: 3}
---- !u!1 &295430053 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6871336178810061029, guid: ed277398923835c4299d67c2e65a4107,
-    type: 3}
-  m_PrefabInstance: {fileID: 295430052}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &295430054
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 295430053}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcd990e1e616cee49b53a3e489a4ca51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moduleInteractibleSO: {fileID: 0}
-  box1: {fileID: 295430055}
-  box2: {fileID: 295430056}
-  movingModuleSpeed: 5
-  moduleName: 
-  mesh: {fileID: 0}
-  moduleMovingSpeed: 0
-  timeToCook: 0
-  Cuisine: 0
-  ElementVerticalMouvemet: []
-  effectDuration: 0
-  forceMultiplier: 0
-  speedMultiplierBonus: 0
-  speedMultiplierMalus: 0
-  canMoveModule: 0
-  modifiedMovingModuleSpeedBonus: 0
-  modifiedMovingModuleSpeedMalus: 0
-  modifiedTimeToCook: 0
-  canCookImmediately: 0
-  parent: {fileID: 0}
-  isOn: 0
-  thrown: 0
---- !u!65 &295430055
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 295430053}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
---- !u!65 &295430056
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 295430053}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
---- !u!1 &297563790 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6871336178810061029, guid: ed277398923835c4299d67c2e65a4107,
-    type: 3}
-  m_PrefabInstance: {fileID: 816069805}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &297563791
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 297563790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcd990e1e616cee49b53a3e489a4ca51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moduleInteractibleSO: {fileID: 0}
-  box1: {fileID: 297563793}
-  box2: {fileID: 297563792}
-  movingModuleSpeed: 5
-  moduleName: 
-  mesh: {fileID: 0}
-  moduleMovingSpeed: 0
-  timeToCook: 0
-  Cuisine: 0
-  ElementVerticalMouvemet: []
-  effectDuration: 0
-  forceMultiplier: 0
-  speedMultiplierBonus: 0
-  speedMultiplierMalus: 0
-  canMoveModule: 0
-  modifiedMovingModuleSpeedBonus: 0
-  modifiedMovingModuleSpeedMalus: 0
-  modifiedTimeToCook: 0
-  canCookImmediately: 0
-  parent: {fileID: 0}
-  isOn: 0
-  thrown: 0
---- !u!65 &297563792
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 297563790}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
---- !u!65 &297563793
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 297563790}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
 --- !u!1001 &300269165
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14547,72 +14144,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: ed277398923835c4299d67c2e65a4107, type: 3}
---- !u!1 &339540436 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6871336178810061029, guid: ed277398923835c4299d67c2e65a4107,
-    type: 3}
-  m_PrefabInstance: {fileID: 339540435}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &339540437
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 339540436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcd990e1e616cee49b53a3e489a4ca51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moduleInteractibleSO: {fileID: 0}
-  box1: {fileID: 339540438}
-  box2: {fileID: 339540439}
-  movingModuleSpeed: 5
-  moduleName: 
-  mesh: {fileID: 0}
-  moduleMovingSpeed: 0
-  timeToCook: 0
-  Cuisine: 0
-  ElementVerticalMouvemet: []
-  effectDuration: 0
-  forceMultiplier: 0
-  speedMultiplierBonus: 0
-  speedMultiplierMalus: 0
-  canMoveModule: 0
-  modifiedMovingModuleSpeedBonus: 0
-  modifiedMovingModuleSpeedMalus: 0
-  modifiedTimeToCook: 0
-  canCookImmediately: 0
-  parent: {fileID: 0}
-  isOn: 0
-  thrown: 0
---- !u!65 &339540438
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 339540436}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
---- !u!65 &339540439
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 339540436}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
 --- !u!1001 &340941178
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16942,72 +16473,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: ed277398923835c4299d67c2e65a4107, type: 3}
---- !u!1 &398734809 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6871336178810061029, guid: ed277398923835c4299d67c2e65a4107,
-    type: 3}
-  m_PrefabInstance: {fileID: 398734808}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &398734810
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 398734809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcd990e1e616cee49b53a3e489a4ca51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moduleInteractibleSO: {fileID: 0}
-  box1: {fileID: 398734811}
-  box2: {fileID: 398734812}
-  movingModuleSpeed: 5
-  moduleName: 
-  mesh: {fileID: 0}
-  moduleMovingSpeed: 0
-  timeToCook: 0
-  Cuisine: 0
-  ElementVerticalMouvemet: []
-  effectDuration: 0
-  forceMultiplier: 0
-  speedMultiplierBonus: 0
-  speedMultiplierMalus: 0
-  canMoveModule: 0
-  modifiedMovingModuleSpeedBonus: 0
-  modifiedMovingModuleSpeedMalus: 0
-  modifiedTimeToCook: 0
-  canCookImmediately: 0
-  parent: {fileID: 0}
-  isOn: 0
-  thrown: 0
---- !u!65 &398734811
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 398734809}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
---- !u!65 &398734812
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 398734809}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
 --- !u!1 &398865852
 GameObject:
   m_ObjectHideFlags: 0
@@ -18001,72 +17466,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: ed277398923835c4299d67c2e65a4107, type: 3}
---- !u!1 &416432732 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6871336178810061029, guid: ed277398923835c4299d67c2e65a4107,
-    type: 3}
-  m_PrefabInstance: {fileID: 416432731}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &416432733
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 416432732}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcd990e1e616cee49b53a3e489a4ca51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moduleInteractibleSO: {fileID: 0}
-  box1: {fileID: 416432734}
-  box2: {fileID: 416432735}
-  movingModuleSpeed: 5
-  moduleName: 
-  mesh: {fileID: 0}
-  moduleMovingSpeed: 0
-  timeToCook: 0
-  Cuisine: 0
-  ElementVerticalMouvemet: []
-  effectDuration: 0
-  forceMultiplier: 0
-  speedMultiplierBonus: 0
-  speedMultiplierMalus: 0
-  canMoveModule: 0
-  modifiedMovingModuleSpeedBonus: 0
-  modifiedMovingModuleSpeedMalus: 0
-  modifiedTimeToCook: 0
-  canCookImmediately: 0
-  parent: {fileID: 0}
-  isOn: 0
-  thrown: 0
---- !u!65 &416432734
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 416432732}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
---- !u!65 &416432735
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 416432732}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
 --- !u!1001 &417881185
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19090,7 +18489,9 @@ MonoBehaviour:
     type: 2}
   box1: {fileID: 431420599}
   box2: {fileID: 431420600}
+  waypointCuisine: {fileID: 0}
   movingModuleSpeed: 5
+  occupied: 0
   moduleName: 
   mesh: {fileID: 0}
   moduleMovingSpeed: 0
@@ -19206,72 +18607,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: ed277398923835c4299d67c2e65a4107, type: 3}
---- !u!1 &435813054 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6871336178810061029, guid: ed277398923835c4299d67c2e65a4107,
-    type: 3}
-  m_PrefabInstance: {fileID: 435813053}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &435813055
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 435813054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcd990e1e616cee49b53a3e489a4ca51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moduleInteractibleSO: {fileID: 0}
-  box1: {fileID: 435813056}
-  box2: {fileID: 435813057}
-  movingModuleSpeed: 5
-  moduleName: 
-  mesh: {fileID: 0}
-  moduleMovingSpeed: 0
-  timeToCook: 0
-  Cuisine: 0
-  ElementVerticalMouvemet: []
-  effectDuration: 0
-  forceMultiplier: 0
-  speedMultiplierBonus: 0
-  speedMultiplierMalus: 0
-  canMoveModule: 0
-  modifiedMovingModuleSpeedBonus: 0
-  modifiedMovingModuleSpeedMalus: 0
-  modifiedTimeToCook: 0
-  canCookImmediately: 0
-  parent: {fileID: 0}
-  isOn: 0
-  thrown: 0
---- !u!65 &435813056
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 435813054}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
---- !u!65 &435813057
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 435813054}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
 --- !u!1001 &436479393
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21884,72 +21219,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: ed277398923835c4299d67c2e65a4107, type: 3}
---- !u!1 &531259100 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6871336178810061029, guid: ed277398923835c4299d67c2e65a4107,
-    type: 3}
-  m_PrefabInstance: {fileID: 531259099}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &531259101
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 531259100}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcd990e1e616cee49b53a3e489a4ca51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moduleInteractibleSO: {fileID: 0}
-  box1: {fileID: 531259102}
-  box2: {fileID: 531259103}
-  movingModuleSpeed: 5
-  moduleName: 
-  mesh: {fileID: 0}
-  moduleMovingSpeed: 0
-  timeToCook: 0
-  Cuisine: 0
-  ElementVerticalMouvemet: []
-  effectDuration: 0
-  forceMultiplier: 0
-  speedMultiplierBonus: 0
-  speedMultiplierMalus: 0
-  canMoveModule: 0
-  modifiedMovingModuleSpeedBonus: 0
-  modifiedMovingModuleSpeedMalus: 0
-  modifiedTimeToCook: 0
-  canCookImmediately: 0
-  parent: {fileID: 0}
-  isOn: 0
-  thrown: 0
---- !u!65 &531259102
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 531259100}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
---- !u!65 &531259103
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 531259100}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
 --- !u!1001 &532402455
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23725,72 +22994,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: ed277398923835c4299d67c2e65a4107, type: 3}
---- !u!1 &573257945 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6871336178810061029, guid: ed277398923835c4299d67c2e65a4107,
-    type: 3}
-  m_PrefabInstance: {fileID: 573257944}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &573257946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 573257945}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcd990e1e616cee49b53a3e489a4ca51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moduleInteractibleSO: {fileID: 0}
-  box1: {fileID: 573257947}
-  box2: {fileID: 573257948}
-  movingModuleSpeed: 5
-  moduleName: 
-  mesh: {fileID: 0}
-  moduleMovingSpeed: 0
-  timeToCook: 0
-  Cuisine: 0
-  ElementVerticalMouvemet: []
-  effectDuration: 0
-  forceMultiplier: 0
-  speedMultiplierBonus: 0
-  speedMultiplierMalus: 0
-  canMoveModule: 0
-  modifiedMovingModuleSpeedBonus: 0
-  modifiedMovingModuleSpeedMalus: 0
-  modifiedTimeToCook: 0
-  canCookImmediately: 0
-  parent: {fileID: 0}
-  isOn: 0
-  thrown: 0
---- !u!65 &573257947
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 573257945}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
---- !u!65 &573257948
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 573257945}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
 --- !u!1001 &574723403
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24773,7 +23976,9 @@ MonoBehaviour:
     type: 2}
   box1: {fileID: 600167722}
   box2: {fileID: 600167721}
+  waypointCuisine: {fileID: 0}
   movingModuleSpeed: 5
+  occupied: 0
   moduleName: 
   mesh: {fileID: 0}
   moduleMovingSpeed: 0
@@ -25065,72 +24270,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 610873023}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &611622875 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6871336178810061029, guid: ed277398923835c4299d67c2e65a4107,
-    type: 3}
-  m_PrefabInstance: {fileID: 77442422}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &611622876
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 611622875}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcd990e1e616cee49b53a3e489a4ca51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moduleInteractibleSO: {fileID: 0}
-  box1: {fileID: 611622878}
-  box2: {fileID: 611622877}
-  movingModuleSpeed: 5
-  moduleName: 
-  mesh: {fileID: 0}
-  moduleMovingSpeed: 0
-  timeToCook: 0
-  Cuisine: 0
-  ElementVerticalMouvemet: []
-  effectDuration: 0
-  forceMultiplier: 0
-  speedMultiplierBonus: 0
-  speedMultiplierMalus: 0
-  canMoveModule: 0
-  modifiedMovingModuleSpeedBonus: 0
-  modifiedMovingModuleSpeedMalus: 0
-  modifiedTimeToCook: 0
-  canCookImmediately: 0
-  parent: {fileID: 0}
-  isOn: 0
-  thrown: 0
---- !u!65 &611622877
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 611622875}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
---- !u!65 &611622878
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 611622875}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
 --- !u!1001 &615306290
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26748,72 +25887,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: ed277398923835c4299d67c2e65a4107, type: 3}
---- !u!1 &650607811 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6871336178810061029, guid: ed277398923835c4299d67c2e65a4107,
-    type: 3}
-  m_PrefabInstance: {fileID: 650607810}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &650607812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 650607811}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcd990e1e616cee49b53a3e489a4ca51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moduleInteractibleSO: {fileID: 0}
-  box1: {fileID: 650607813}
-  box2: {fileID: 650607814}
-  movingModuleSpeed: 5
-  moduleName: 
-  mesh: {fileID: 0}
-  moduleMovingSpeed: 0
-  timeToCook: 0
-  Cuisine: 0
-  ElementVerticalMouvemet: []
-  effectDuration: 0
-  forceMultiplier: 0
-  speedMultiplierBonus: 0
-  speedMultiplierMalus: 0
-  canMoveModule: 0
-  modifiedMovingModuleSpeedBonus: 0
-  modifiedMovingModuleSpeedMalus: 0
-  modifiedTimeToCook: 0
-  canCookImmediately: 0
-  parent: {fileID: 0}
-  isOn: 0
-  thrown: 0
---- !u!65 &650607813
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 650607811}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
---- !u!65 &650607814
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 650607811}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
 --- !u!1001 &650704459
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29693,72 +28766,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: ed277398923835c4299d67c2e65a4107, type: 3}
---- !u!1 &730496036 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6871336178810061029, guid: ed277398923835c4299d67c2e65a4107,
-    type: 3}
-  m_PrefabInstance: {fileID: 730496035}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &730496037
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 730496036}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcd990e1e616cee49b53a3e489a4ca51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moduleInteractibleSO: {fileID: 0}
-  box1: {fileID: 730496039}
-  box2: {fileID: 730496038}
-  movingModuleSpeed: 5
-  moduleName: 
-  mesh: {fileID: 0}
-  moduleMovingSpeed: 0
-  timeToCook: 0
-  Cuisine: 0
-  ElementVerticalMouvemet: []
-  effectDuration: 0
-  forceMultiplier: 0
-  speedMultiplierBonus: 0
-  speedMultiplierMalus: 0
-  canMoveModule: 0
-  modifiedMovingModuleSpeedBonus: 0
-  modifiedMovingModuleSpeedMalus: 0
-  modifiedTimeToCook: 0
-  canCookImmediately: 0
-  parent: {fileID: 0}
-  isOn: 0
-  thrown: 0
---- !u!65 &730496038
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 730496036}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
---- !u!65 &730496039
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 730496036}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
 --- !u!1001 &731032420
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31837,72 +30844,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: ed277398923835c4299d67c2e65a4107, type: 3}
---- !u!1 &774971406 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6871336178810061029, guid: ed277398923835c4299d67c2e65a4107,
-    type: 3}
-  m_PrefabInstance: {fileID: 774971405}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &774971407
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 774971406}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcd990e1e616cee49b53a3e489a4ca51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moduleInteractibleSO: {fileID: 0}
-  box1: {fileID: 774971409}
-  box2: {fileID: 774971408}
-  movingModuleSpeed: 5
-  moduleName: 
-  mesh: {fileID: 0}
-  moduleMovingSpeed: 0
-  timeToCook: 0
-  Cuisine: 0
-  ElementVerticalMouvemet: []
-  effectDuration: 0
-  forceMultiplier: 0
-  speedMultiplierBonus: 0
-  speedMultiplierMalus: 0
-  canMoveModule: 0
-  modifiedMovingModuleSpeedBonus: 0
-  modifiedMovingModuleSpeedMalus: 0
-  modifiedTimeToCook: 0
-  canCookImmediately: 0
-  parent: {fileID: 0}
-  isOn: 0
-  thrown: 0
---- !u!65 &774971408
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 774971406}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
---- !u!65 &774971409
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 774971406}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
 --- !u!1001 &779725541
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31974,72 +30915,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: ed277398923835c4299d67c2e65a4107, type: 3}
---- !u!1 &779725542 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6871336178810061029, guid: ed277398923835c4299d67c2e65a4107,
-    type: 3}
-  m_PrefabInstance: {fileID: 779725541}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &779725543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 779725542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcd990e1e616cee49b53a3e489a4ca51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moduleInteractibleSO: {fileID: 0}
-  box1: {fileID: 779725544}
-  box2: {fileID: 779725545}
-  movingModuleSpeed: 5
-  moduleName: 
-  mesh: {fileID: 0}
-  moduleMovingSpeed: 0
-  timeToCook: 0
-  Cuisine: 0
-  ElementVerticalMouvemet: []
-  effectDuration: 0
-  forceMultiplier: 0
-  speedMultiplierBonus: 0
-  speedMultiplierMalus: 0
-  canMoveModule: 0
-  modifiedMovingModuleSpeedBonus: 0
-  modifiedMovingModuleSpeedMalus: 0
-  modifiedTimeToCook: 0
-  canCookImmediately: 0
-  parent: {fileID: 0}
-  isOn: 0
-  thrown: 0
---- !u!65 &779725544
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 779725542}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
---- !u!65 &779725545
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 779725542}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
 --- !u!1001 &781942388
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33573,72 +32448,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: ed277398923835c4299d67c2e65a4107, type: 3}
---- !u!1 &815164842 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6871336178810061029, guid: ed277398923835c4299d67c2e65a4107,
-    type: 3}
-  m_PrefabInstance: {fileID: 815164841}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &815164843
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 815164842}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcd990e1e616cee49b53a3e489a4ca51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moduleInteractibleSO: {fileID: 0}
-  box1: {fileID: 815164844}
-  box2: {fileID: 815164845}
-  movingModuleSpeed: 5
-  moduleName: 
-  mesh: {fileID: 0}
-  moduleMovingSpeed: 0
-  timeToCook: 0
-  Cuisine: 0
-  ElementVerticalMouvemet: []
-  effectDuration: 0
-  forceMultiplier: 0
-  speedMultiplierBonus: 0
-  speedMultiplierMalus: 0
-  canMoveModule: 0
-  modifiedMovingModuleSpeedBonus: 0
-  modifiedMovingModuleSpeedMalus: 0
-  modifiedTimeToCook: 0
-  canCookImmediately: 0
-  parent: {fileID: 0}
-  isOn: 0
-  thrown: 0
---- !u!65 &815164844
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 815164842}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
---- !u!65 &815164845
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 815164842}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
 --- !u!1001 &815771180
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34551,72 +33360,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: ed277398923835c4299d67c2e65a4107, type: 3}
---- !u!1 &840645958 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6871336178810061029, guid: ed277398923835c4299d67c2e65a4107,
-    type: 3}
-  m_PrefabInstance: {fileID: 840645957}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &840645959
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 840645958}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcd990e1e616cee49b53a3e489a4ca51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moduleInteractibleSO: {fileID: 0}
-  box1: {fileID: 840645961}
-  box2: {fileID: 840645960}
-  movingModuleSpeed: 5
-  moduleName: 
-  mesh: {fileID: 0}
-  moduleMovingSpeed: 0
-  timeToCook: 0
-  Cuisine: 0
-  ElementVerticalMouvemet: []
-  effectDuration: 0
-  forceMultiplier: 0
-  speedMultiplierBonus: 0
-  speedMultiplierMalus: 0
-  canMoveModule: 0
-  modifiedMovingModuleSpeedBonus: 0
-  modifiedMovingModuleSpeedMalus: 0
-  modifiedTimeToCook: 0
-  canCookImmediately: 0
-  parent: {fileID: 0}
-  isOn: 0
-  thrown: 0
---- !u!65 &840645960
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 840645958}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
---- !u!65 &840645961
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 840645958}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
 --- !u!1001 &846295111
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34848,72 +33591,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 849929029}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &858060491 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6871336178810061029, guid: ed277398923835c4299d67c2e65a4107,
-    type: 3}
-  m_PrefabInstance: {fileID: 2072165166}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &858060492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 858060491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcd990e1e616cee49b53a3e489a4ca51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moduleInteractibleSO: {fileID: 0}
-  box1: {fileID: 858060494}
-  box2: {fileID: 858060493}
-  movingModuleSpeed: 5
-  moduleName: 
-  mesh: {fileID: 0}
-  moduleMovingSpeed: 0
-  timeToCook: 0
-  Cuisine: 0
-  ElementVerticalMouvemet: []
-  effectDuration: 0
-  forceMultiplier: 0
-  speedMultiplierBonus: 0
-  speedMultiplierMalus: 0
-  canMoveModule: 0
-  modifiedMovingModuleSpeedBonus: 0
-  modifiedMovingModuleSpeedMalus: 0
-  modifiedTimeToCook: 0
-  canCookImmediately: 0
-  parent: {fileID: 0}
-  isOn: 0
-  thrown: 0
---- !u!65 &858060493
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 858060491}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
---- !u!65 &858060494
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 858060491}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
 --- !u!1001 &859984129
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37909,7 +36586,9 @@ MonoBehaviour:
   moduleInteractibleSO: {fileID: 0}
   box1: {fileID: 942309039}
   box2: {fileID: 942309040}
+  waypointCuisine: {fileID: 0}
   movingModuleSpeed: 5
+  occupied: 0
   moduleName: 
   mesh: {fileID: 0}
   moduleMovingSpeed: 0
@@ -38586,7 +37265,9 @@ MonoBehaviour:
     type: 2}
   box1: {fileID: 967749836}
   box2: {fileID: 967749835}
+  waypointCuisine: {fileID: 0}
   movingModuleSpeed: 5
+  occupied: 0
   moduleName: 
   mesh: {fileID: 0}
   moduleMovingSpeed: 0
@@ -42770,72 +41451,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: ed277398923835c4299d67c2e65a4107, type: 3}
---- !u!1 &1079745959 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6871336178810061029, guid: ed277398923835c4299d67c2e65a4107,
-    type: 3}
-  m_PrefabInstance: {fileID: 1079745958}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1079745960
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1079745959}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcd990e1e616cee49b53a3e489a4ca51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moduleInteractibleSO: {fileID: 0}
-  box1: {fileID: 1079745962}
-  box2: {fileID: 1079745961}
-  movingModuleSpeed: 5
-  moduleName: 
-  mesh: {fileID: 0}
-  moduleMovingSpeed: 0
-  timeToCook: 0
-  Cuisine: 0
-  ElementVerticalMouvemet: []
-  effectDuration: 0
-  forceMultiplier: 0
-  speedMultiplierBonus: 0
-  speedMultiplierMalus: 0
-  canMoveModule: 0
-  modifiedMovingModuleSpeedBonus: 0
-  modifiedMovingModuleSpeedMalus: 0
-  modifiedTimeToCook: 0
-  canCookImmediately: 0
-  parent: {fileID: 0}
-  isOn: 0
-  thrown: 0
---- !u!65 &1079745961
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1079745959}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
---- !u!65 &1079745962
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1079745959}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
 --- !u!1001 &1079832678
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45057,72 +43672,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1141346082}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1143375661 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6871336178810061029, guid: ed277398923835c4299d67c2e65a4107,
-    type: 3}
-  m_PrefabInstance: {fileID: 1598914979}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1143375662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1143375661}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcd990e1e616cee49b53a3e489a4ca51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moduleInteractibleSO: {fileID: 0}
-  box1: {fileID: 1143375664}
-  box2: {fileID: 1143375663}
-  movingModuleSpeed: 5
-  moduleName: 
-  mesh: {fileID: 0}
-  moduleMovingSpeed: 0
-  timeToCook: 0
-  Cuisine: 0
-  ElementVerticalMouvemet: []
-  effectDuration: 0
-  forceMultiplier: 0
-  speedMultiplierBonus: 0
-  speedMultiplierMalus: 0
-  canMoveModule: 0
-  modifiedMovingModuleSpeedBonus: 0
-  modifiedMovingModuleSpeedMalus: 0
-  modifiedTimeToCook: 0
-  canCookImmediately: 0
-  parent: {fileID: 0}
-  isOn: 0
-  thrown: 0
---- !u!65 &1143375663
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1143375661}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
---- !u!65 &1143375664
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1143375661}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
 --- !u!1001 &1145974878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45607,7 +44156,9 @@ MonoBehaviour:
     type: 2}
   box1: {fileID: 1155493719}
   box2: {fileID: 1155493718}
+  waypointCuisine: {fileID: 0}
   movingModuleSpeed: 5
+  occupied: 0
   moduleName: 
   mesh: {fileID: 0}
   moduleMovingSpeed: 0
@@ -52090,72 +50641,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: ed277398923835c4299d67c2e65a4107, type: 3}
---- !u!1 &1318165331 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6871336178810061029, guid: ed277398923835c4299d67c2e65a4107,
-    type: 3}
-  m_PrefabInstance: {fileID: 1318165330}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1318165332
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1318165331}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcd990e1e616cee49b53a3e489a4ca51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moduleInteractibleSO: {fileID: 0}
-  box1: {fileID: 1318165333}
-  box2: {fileID: 1318165334}
-  movingModuleSpeed: 5
-  moduleName: 
-  mesh: {fileID: 0}
-  moduleMovingSpeed: 0
-  timeToCook: 0
-  Cuisine: 0
-  ElementVerticalMouvemet: []
-  effectDuration: 0
-  forceMultiplier: 0
-  speedMultiplierBonus: 0
-  speedMultiplierMalus: 0
-  canMoveModule: 0
-  modifiedMovingModuleSpeedBonus: 0
-  modifiedMovingModuleSpeedMalus: 0
-  modifiedTimeToCook: 0
-  canCookImmediately: 0
-  parent: {fileID: 0}
-  isOn: 0
-  thrown: 0
---- !u!65 &1318165333
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1318165331}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
---- !u!65 &1318165334
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1318165331}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
 --- !u!1001 &1319393239
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52458,72 +50943,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: ed277398923835c4299d67c2e65a4107, type: 3}
---- !u!1 &1326126870 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6871336178810061029, guid: ed277398923835c4299d67c2e65a4107,
-    type: 3}
-  m_PrefabInstance: {fileID: 1326126869}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1326126871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1326126870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcd990e1e616cee49b53a3e489a4ca51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moduleInteractibleSO: {fileID: 0}
-  box1: {fileID: 1326126872}
-  box2: {fileID: 1326126873}
-  movingModuleSpeed: 5
-  moduleName: 
-  mesh: {fileID: 0}
-  moduleMovingSpeed: 0
-  timeToCook: 0
-  Cuisine: 0
-  ElementVerticalMouvemet: []
-  effectDuration: 0
-  forceMultiplier: 0
-  speedMultiplierBonus: 0
-  speedMultiplierMalus: 0
-  canMoveModule: 0
-  modifiedMovingModuleSpeedBonus: 0
-  modifiedMovingModuleSpeedMalus: 0
-  modifiedTimeToCook: 0
-  canCookImmediately: 0
-  parent: {fileID: 0}
-  isOn: 0
-  thrown: 0
---- !u!65 &1326126872
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1326126870}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
---- !u!65 &1326126873
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1326126870}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
 --- !u!1001 &1326664906
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53134,72 +51553,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: ed277398923835c4299d67c2e65a4107, type: 3}
---- !u!1 &1329235248 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6871336178810061029, guid: ed277398923835c4299d67c2e65a4107,
-    type: 3}
-  m_PrefabInstance: {fileID: 1329235247}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1329235249
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1329235248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcd990e1e616cee49b53a3e489a4ca51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moduleInteractibleSO: {fileID: 0}
-  box1: {fileID: 1329235250}
-  box2: {fileID: 1329235251}
-  movingModuleSpeed: 5
-  moduleName: 
-  mesh: {fileID: 0}
-  moduleMovingSpeed: 0
-  timeToCook: 0
-  Cuisine: 0
-  ElementVerticalMouvemet: []
-  effectDuration: 0
-  forceMultiplier: 0
-  speedMultiplierBonus: 0
-  speedMultiplierMalus: 0
-  canMoveModule: 0
-  modifiedMovingModuleSpeedBonus: 0
-  modifiedMovingModuleSpeedMalus: 0
-  modifiedTimeToCook: 0
-  canCookImmediately: 0
-  parent: {fileID: 0}
-  isOn: 0
-  thrown: 0
---- !u!65 &1329235250
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1329235248}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
---- !u!65 &1329235251
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1329235248}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
 --- !u!1 &1329594306
 GameObject:
   m_ObjectHideFlags: 0
@@ -53862,72 +52215,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: ed277398923835c4299d67c2e65a4107, type: 3}
---- !u!1 &1338905185 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6871336178810061029, guid: ed277398923835c4299d67c2e65a4107,
-    type: 3}
-  m_PrefabInstance: {fileID: 1338905184}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1338905186
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1338905185}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcd990e1e616cee49b53a3e489a4ca51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moduleInteractibleSO: {fileID: 0}
-  box1: {fileID: 1338905187}
-  box2: {fileID: 1338905188}
-  movingModuleSpeed: 5
-  moduleName: 
-  mesh: {fileID: 0}
-  moduleMovingSpeed: 0
-  timeToCook: 0
-  Cuisine: 0
-  ElementVerticalMouvemet: []
-  effectDuration: 0
-  forceMultiplier: 0
-  speedMultiplierBonus: 0
-  speedMultiplierMalus: 0
-  canMoveModule: 0
-  modifiedMovingModuleSpeedBonus: 0
-  modifiedMovingModuleSpeedMalus: 0
-  modifiedTimeToCook: 0
-  canCookImmediately: 0
-  parent: {fileID: 0}
-  isOn: 0
-  thrown: 0
---- !u!65 &1338905187
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1338905185}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
---- !u!65 &1338905188
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1338905185}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
 --- !u!1001 &1339671640
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55107,72 +53394,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: ed277398923835c4299d67c2e65a4107, type: 3}
---- !u!1 &1372497784 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6871336178810061029, guid: ed277398923835c4299d67c2e65a4107,
-    type: 3}
-  m_PrefabInstance: {fileID: 1372497783}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1372497785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1372497784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcd990e1e616cee49b53a3e489a4ca51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moduleInteractibleSO: {fileID: 0}
-  box1: {fileID: 1372497786}
-  box2: {fileID: 1372497787}
-  movingModuleSpeed: 5
-  moduleName: 
-  mesh: {fileID: 0}
-  moduleMovingSpeed: 0
-  timeToCook: 0
-  Cuisine: 0
-  ElementVerticalMouvemet: []
-  effectDuration: 0
-  forceMultiplier: 0
-  speedMultiplierBonus: 0
-  speedMultiplierMalus: 0
-  canMoveModule: 0
-  modifiedMovingModuleSpeedBonus: 0
-  modifiedMovingModuleSpeedMalus: 0
-  modifiedTimeToCook: 0
-  canCookImmediately: 0
-  parent: {fileID: 0}
-  isOn: 0
-  thrown: 0
---- !u!65 &1372497786
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1372497784}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
---- !u!65 &1372497787
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1372497784}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
 --- !u!1001 &1372532631
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58203,72 +56424,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: ed277398923835c4299d67c2e65a4107, type: 3}
---- !u!1 &1464764045 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6871336178810061029, guid: ed277398923835c4299d67c2e65a4107,
-    type: 3}
-  m_PrefabInstance: {fileID: 1464764044}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1464764046
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1464764045}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcd990e1e616cee49b53a3e489a4ca51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moduleInteractibleSO: {fileID: 0}
-  box1: {fileID: 1464764047}
-  box2: {fileID: 1464764048}
-  movingModuleSpeed: 5
-  moduleName: 
-  mesh: {fileID: 0}
-  moduleMovingSpeed: 0
-  timeToCook: 0
-  Cuisine: 0
-  ElementVerticalMouvemet: []
-  effectDuration: 0
-  forceMultiplier: 0
-  speedMultiplierBonus: 0
-  speedMultiplierMalus: 0
-  canMoveModule: 0
-  modifiedMovingModuleSpeedBonus: 0
-  modifiedMovingModuleSpeedMalus: 0
-  modifiedTimeToCook: 0
-  canCookImmediately: 0
-  parent: {fileID: 0}
-  isOn: 0
-  thrown: 0
---- !u!65 &1464764047
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1464764045}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
---- !u!65 &1464764048
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1464764045}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
 --- !u!1001 &1465242422
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59579,10 +57734,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 431420597}
-    - targetCorrespondingSourceObject: {fileID: 7104525534216359826, guid: ee6e59030b1f46245aa7399d18220fdc,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 59658355}
   m_SourcePrefab: {fileID: 100100000, guid: ee6e59030b1f46245aa7399d18220fdc, type: 3}
 --- !u!1001 &1501423202
 PrefabInstance:
@@ -60717,72 +58868,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: ed277398923835c4299d67c2e65a4107, type: 3}
---- !u!1 &1528366571 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6871336178810061029, guid: ed277398923835c4299d67c2e65a4107,
-    type: 3}
-  m_PrefabInstance: {fileID: 1528366570}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1528366572
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1528366571}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcd990e1e616cee49b53a3e489a4ca51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moduleInteractibleSO: {fileID: 0}
-  box1: {fileID: 1528366574}
-  box2: {fileID: 1528366573}
-  movingModuleSpeed: 5
-  moduleName: 
-  mesh: {fileID: 0}
-  moduleMovingSpeed: 0
-  timeToCook: 0
-  Cuisine: 0
-  ElementVerticalMouvemet: []
-  effectDuration: 0
-  forceMultiplier: 0
-  speedMultiplierBonus: 0
-  speedMultiplierMalus: 0
-  canMoveModule: 0
-  modifiedMovingModuleSpeedBonus: 0
-  modifiedMovingModuleSpeedMalus: 0
-  modifiedTimeToCook: 0
-  canCookImmediately: 0
-  parent: {fileID: 0}
-  isOn: 0
-  thrown: 0
---- !u!65 &1528366573
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1528366571}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
---- !u!65 &1528366574
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1528366571}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
 --- !u!1001 &1529231146
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62676,72 +60761,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1571170315}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1574455465 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6871336178810061029, guid: ed277398923835c4299d67c2e65a4107,
-    type: 3}
-  m_PrefabInstance: {fileID: 1372532631}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1574455466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1574455465}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcd990e1e616cee49b53a3e489a4ca51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moduleInteractibleSO: {fileID: 0}
-  box1: {fileID: 1574455468}
-  box2: {fileID: 1574455467}
-  movingModuleSpeed: 5
-  moduleName: 
-  mesh: {fileID: 0}
-  moduleMovingSpeed: 0
-  timeToCook: 0
-  Cuisine: 0
-  ElementVerticalMouvemet: []
-  effectDuration: 0
-  forceMultiplier: 0
-  speedMultiplierBonus: 0
-  speedMultiplierMalus: 0
-  canMoveModule: 0
-  modifiedMovingModuleSpeedBonus: 0
-  modifiedMovingModuleSpeedMalus: 0
-  modifiedTimeToCook: 0
-  canCookImmediately: 0
-  parent: {fileID: 0}
-  isOn: 0
-  thrown: 0
---- !u!65 &1574455467
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1574455465}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
---- !u!65 &1574455468
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1574455465}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
 --- !u!1001 &1576234139
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68035,7 +66054,9 @@ MonoBehaviour:
     type: 2}
   box1: {fileID: 1686009384}
   box2: {fileID: 1686009386}
+  waypointCuisine: {fileID: 0}
   movingModuleSpeed: 5
+  occupied: 0
   moduleName: 
   mesh: {fileID: 0}
   moduleMovingSpeed: 0
@@ -72314,72 +70335,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1789169937}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1792188839 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6871336178810061029, guid: ed277398923835c4299d67c2e65a4107,
-    type: 3}
-  m_PrefabInstance: {fileID: 1810375145}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1792188840
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1792188839}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcd990e1e616cee49b53a3e489a4ca51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moduleInteractibleSO: {fileID: 0}
-  box1: {fileID: 1792188842}
-  box2: {fileID: 1792188841}
-  movingModuleSpeed: 5
-  moduleName: 
-  mesh: {fileID: 0}
-  moduleMovingSpeed: 0
-  timeToCook: 0
-  Cuisine: 0
-  ElementVerticalMouvemet: []
-  effectDuration: 0
-  forceMultiplier: 0
-  speedMultiplierBonus: 0
-  speedMultiplierMalus: 0
-  canMoveModule: 0
-  modifiedMovingModuleSpeedBonus: 0
-  modifiedMovingModuleSpeedMalus: 0
-  modifiedTimeToCook: 0
-  canCookImmediately: 0
-  parent: {fileID: 0}
-  isOn: 0
-  thrown: 0
---- !u!65 &1792188841
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1792188839}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
---- !u!65 &1792188842
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1792188839}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
 --- !u!1001 &1796037491
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -73638,7 +71593,9 @@ MonoBehaviour:
     type: 2}
   box1: {fileID: 1839172432}
   box2: {fileID: 1839172433}
+  waypointCuisine: {fileID: 0}
   movingModuleSpeed: 5
+  occupied: 0
   moduleName: 
   mesh: {fileID: 0}
   moduleMovingSpeed: 0
@@ -74155,72 +72112,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: ed277398923835c4299d67c2e65a4107, type: 3}
---- !u!1 &1845445135 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6871336178810061029, guid: ed277398923835c4299d67c2e65a4107,
-    type: 3}
-  m_PrefabInstance: {fileID: 1845445134}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1845445136
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1845445135}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcd990e1e616cee49b53a3e489a4ca51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moduleInteractibleSO: {fileID: 0}
-  box1: {fileID: 1845445137}
-  box2: {fileID: 1845445138}
-  movingModuleSpeed: 5
-  moduleName: 
-  mesh: {fileID: 0}
-  moduleMovingSpeed: 0
-  timeToCook: 0
-  Cuisine: 0
-  ElementVerticalMouvemet: []
-  effectDuration: 0
-  forceMultiplier: 0
-  speedMultiplierBonus: 0
-  speedMultiplierMalus: 0
-  canMoveModule: 0
-  modifiedMovingModuleSpeedBonus: 0
-  modifiedMovingModuleSpeedMalus: 0
-  modifiedTimeToCook: 0
-  canCookImmediately: 0
-  parent: {fileID: 0}
-  isOn: 0
-  thrown: 0
---- !u!65 &1845445137
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1845445135}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
---- !u!65 &1845445138
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1845445135}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
 --- !u!1001 &1846005723
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -77520,72 +75411,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1928785385}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1929515936 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6871336178810061029, guid: ed277398923835c4299d67c2e65a4107,
-    type: 3}
-  m_PrefabInstance: {fileID: 1079832678}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1929515938
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1929515936}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
---- !u!65 &1929515939
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1929515936}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
---- !u!114 &1929515940
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1929515936}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcd990e1e616cee49b53a3e489a4ca51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moduleInteractibleSO: {fileID: 0}
-  box1: {fileID: 1929515939}
-  box2: {fileID: 1929515938}
-  movingModuleSpeed: 5
-  moduleName: 
-  mesh: {fileID: 0}
-  moduleMovingSpeed: 0
-  timeToCook: 0
-  Cuisine: 0
-  ElementVerticalMouvemet: []
-  effectDuration: 0
-  forceMultiplier: 0
-  speedMultiplierBonus: 0
-  speedMultiplierMalus: 0
-  canMoveModule: 0
-  modifiedMovingModuleSpeedBonus: 0
-  modifiedMovingModuleSpeedMalus: 0
-  modifiedTimeToCook: 0
-  canCookImmediately: 0
-  parent: {fileID: 0}
-  isOn: 0
-  thrown: 0
 --- !u!1001 &1930908635
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -79525,7 +77350,9 @@ MonoBehaviour:
   moduleInteractibleSO: {fileID: 0}
   box1: {fileID: 1962091561}
   box2: {fileID: 1962091562}
+  waypointCuisine: {fileID: 0}
   movingModuleSpeed: 5
+  occupied: 0
   moduleName: 
   mesh: {fileID: 0}
   moduleMovingSpeed: 0
@@ -85200,77 +83027,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2097413766}
   m_CullTransparentMesh: 1
---- !u!1001 &2098991625
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 2
-    m_TransformParent: {fileID: 1606576614}
-    m_Modifications:
-    - target: {fileID: 2572967000665597953, guid: 1880fe432ef86a14ebf62f0564db527b,
-        type: 3}
-      propertyPath: m_Name
-      value: chromodium (8)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2954030910565642939, guid: 1880fe432ef86a14ebf62f0564db527b,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2954030910565642939, guid: 1880fe432ef86a14ebf62f0564db527b,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.03000021
-      objectReference: {fileID: 0}
-    - target: {fileID: 2954030910565642939, guid: 1880fe432ef86a14ebf62f0564db527b,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.376
-      objectReference: {fileID: 0}
-    - target: {fileID: 2954030910565642939, guid: 1880fe432ef86a14ebf62f0564db527b,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.028999925
-      objectReference: {fileID: 0}
-    - target: {fileID: 2954030910565642939, guid: 1880fe432ef86a14ebf62f0564db527b,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2954030910565642939, guid: 1880fe432ef86a14ebf62f0564db527b,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2954030910565642939, guid: 1880fe432ef86a14ebf62f0564db527b,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2954030910565642939, guid: 1880fe432ef86a14ebf62f0564db527b,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2954030910565642939, guid: 1880fe432ef86a14ebf62f0564db527b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2954030910565642939, guid: 1880fe432ef86a14ebf62f0564db527b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2954030910565642939, guid: 1880fe432ef86a14ebf62f0564db527b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_AddedGameObjects: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1880fe432ef86a14ebf62f0564db527b, type: 3}
 --- !u!1001 &2099455641
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -85727,72 +83483,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: ed277398923835c4299d67c2e65a4107, type: 3}
---- !u!1 &2113218191 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6871336178810061029, guid: ed277398923835c4299d67c2e65a4107,
-    type: 3}
-  m_PrefabInstance: {fileID: 2113218190}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2113218192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2113218191}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcd990e1e616cee49b53a3e489a4ca51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moduleInteractibleSO: {fileID: 0}
-  box1: {fileID: 2113218193}
-  box2: {fileID: 2113218194}
-  movingModuleSpeed: 5
-  moduleName: 
-  mesh: {fileID: 0}
-  moduleMovingSpeed: 0
-  timeToCook: 0
-  Cuisine: 0
-  ElementVerticalMouvemet: []
-  effectDuration: 0
-  forceMultiplier: 0
-  speedMultiplierBonus: 0
-  speedMultiplierMalus: 0
-  canMoveModule: 0
-  modifiedMovingModuleSpeedBonus: 0
-  modifiedMovingModuleSpeedMalus: 0
-  modifiedTimeToCook: 0
-  canCookImmediately: 0
-  parent: {fileID: 0}
-  isOn: 0
-  thrown: 0
---- !u!65 &2113218193
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2113218191}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
---- !u!65 &2113218194
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2113218191}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9697032, z: 0.9883975}
-  m_Center: {x: 0, y: 0.51502943, z: -0.0058012605}
 --- !u!1 &2115926387
 GameObject:
   m_ObjectHideFlags: 0
