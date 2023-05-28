@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2295106280021168181}
   - component: {fileID: 3809078315770144229}
   - component: {fileID: 2341150988954117558}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Box052
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 1671423880211406554}
   - component: {fileID: 27025057942338534}
   - component: {fileID: 4322116573318496010}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Box051
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 8799706638311554653}
   - component: {fileID: 6641802802109045805}
   - component: {fileID: 1580810703903712117}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Box055
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 6874509402170224962}
   - component: {fileID: 4351197377119375670}
   - component: {fileID: 4497644515956682840}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Box054
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: 3167349414042685928}
   - component: {fileID: 515723891122046765}
   - component: {fileID: 8652667517601910805}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Box059
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -426,7 +426,7 @@ GameObject:
   - component: {fileID: 6517338642191034837}
   - component: {fileID: 1344278797965905429}
   - component: {fileID: 5273762622970458075}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Box049
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -509,7 +509,7 @@ GameObject:
   - component: {fileID: 5580059845979636411}
   - component: {fileID: 6346290963438043397}
   - component: {fileID: 1940908237343944633}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Box050
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -592,7 +592,7 @@ GameObject:
   - component: {fileID: 6795293882649598198}
   - component: {fileID: 8773665800854756245}
   - component: {fileID: 3698709642812603723}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Box058
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -675,7 +675,7 @@ GameObject:
   - component: {fileID: 1914738272638295514}
   - component: {fileID: 2730140575919606136}
   - component: {fileID: 9092479399894992178}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Box060
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -758,7 +758,7 @@ GameObject:
   - component: {fileID: 8413286020958578560}
   - component: {fileID: 9129648425880845087}
   - component: {fileID: 6978636917610165954}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Box053
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -839,7 +839,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7744217862388533389}
-  m_Layer: 0
+  - component: {fileID: 4678587966517607659}
+  m_Layer: 6
   m_Name: "caisse de p\xE9pinrium"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -873,8 +874,21 @@ Transform:
   - {fileID: 1914738272638295514}
   - {fileID: 875296817872282360}
   m_Father: {fileID: 0}
-  m_RootOrder: 68
+  m_RootOrder: 80
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &4678587966517607659
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6931934493516698167}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0192461, y: 0.6882457, z: 1}
+  m_Center: {x: -0.06893301, y: 0.3420172, z: 0}
 --- !u!1 &7295444396816108835
 GameObject:
   m_ObjectHideFlags: 0
@@ -886,7 +900,7 @@ GameObject:
   - component: {fileID: 8412032887672547960}
   - component: {fileID: 5621916048282879468}
   - component: {fileID: 7392054915240086226}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Box048
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -969,7 +983,7 @@ GameObject:
   - component: {fileID: 3430671852588259986}
   - component: {fileID: 7125205459635254946}
   - component: {fileID: 6039342065580709217}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Box057
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1052,7 +1066,7 @@ GameObject:
   - component: {fileID: 3610877259976191004}
   - component: {fileID: 7920985689763150524}
   - component: {fileID: 5037568799651016576}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Box056
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1132,10 +1146,20 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 7744217862388533389}
     m_Modifications:
+    - target: {fileID: 2923566367942182962, guid: 57349e936a20d58408ffed14a912bb49,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3741344602842561580, guid: 57349e936a20d58408ffed14a912bb49,
         type: 3}
       propertyPath: m_Name
       value: "p\xE9pinrium"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3741344602842561580, guid: 57349e936a20d58408ffed14a912bb49,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4080329108258629270, guid: 57349e936a20d58408ffed14a912bb49,
         type: 3}
@@ -1191,6 +1215,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5244788711373932490, guid: 57349e936a20d58408ffed14a912bb49,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5475212009273165533, guid: 57349e936a20d58408ffed14a912bb49,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676256215300203323, guid: 57349e936a20d58408ffed14a912bb49,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7010048266103239257, guid: 57349e936a20d58408ffed14a912bb49,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
